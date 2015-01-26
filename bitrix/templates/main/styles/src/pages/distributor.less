@@ -1,0 +1,54 @@
+// main: ../main.less
+
+@import '../main.less';
+
+.distributor{
+	position: relative;
+	margin: 75px auto 72px;
+	width: 960px;
+	a{
+		background-image: -ms-linear-gradient(top, #FFE508 0%, #FFCB08 100%);
+		background-image: -moz-linear-gradient(top, #FFE508 0%, #FFCB08 100%);
+		background-image: -o-linear-gradient(top, #FFE508 0%, #FFCB08 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFE508), color-stop(1, #FFCB08));
+		background-image: -webkit-linear-gradient(top, #FFE508 0%, #FFCB08 100%);
+		background-image: linear-gradient(to bottom, #FFE508 0%, #FFCB08 100%);
+		color: #324141;
+		font-size: 30px;
+		font-family: pt_sans_bold;
+		text-decoration: none;
+		padding: 24px 0;
+		width: 370px;
+		display: block;
+		text-align: center;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		margin: 0 auto;
+		&:hover{
+			background: #bf2267;
+			color: #FFF;
+		}
+	}
+	#text{
+		position: absolute;
+		top: 4px;
+		right: 45px;
+		width: 147px;
+		color: #4f4e4e;
+		font-size: 15px;
+		font-family: pt_sans_regular;
+		line-height: 19px;
+		p{
+			margin: 0 0 10px 0;
+		}
+	}
+	#arrow{
+		display: block;
+		background: url('@{imgPrefix}arrow-distribute.png') no-repeat;
+		width: 149px;
+		height: 28px;
+		position: absolute;
+		right: 170px;
+	}
+}

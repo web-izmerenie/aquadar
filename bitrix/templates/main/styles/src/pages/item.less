@@ -1,0 +1,299 @@
+// main: ../main.less
+
+.inside-content{
+	.items{
+		.category{
+			display: inline-block;
+			position: relative;
+			h1{
+				font-size: 32px !important;
+				color: #55a0bc !important;
+				margin-top: 55px;
+				margin-bottom: 45px;
+			}
+			ul{
+				list-style: none;
+				li{
+					display: inline-block;
+					width: 156px;
+					text-align: center;
+					margin-top: 65px;
+					span{
+						display: table-cell;
+						height: 50px;
+						vertical-align: middle;
+						text-align: center;
+						width: inherit;
+					}
+					.info_bottle{
+						position: absolute;
+						right: -145px;
+						top: 224px;
+						width: 261px;
+						text-align: left;
+						span{
+							border-bottom: 1px solid #d0d0d0;
+							display: block;
+							position: absolute;
+							left: -177px;
+							top: 33px;
+							width: 187px;
+							-moz-transform: rotate(21deg);
+							-ms-transform: rotate(21deg);
+							-webkit-transform: rotate(21deg);
+							-o-transform: rotate(21deg);
+							transform: rotate(21deg);
+							top: 25px;
+							height: auto;
+						}
+						h3{
+							font-family: pt_sans_bold;
+							font-weight: normal;
+							color: #000;
+						}
+						p{
+							background: none;
+							color: #000;
+							font-size: 14px;
+							font-weight: normal;
+							line-height: 1.5;
+							text-align: left;
+							font-family: pt_sans_regular;
+							width: auto;
+						}
+					}
+				}
+				p{
+					text-align: center;
+					color: #FFF;
+					font-size: 16px;
+					font-family: pt_sans_bold;
+					display: block;
+					width: 45px;
+					height: 45px;
+					margin: 0 auto;
+					background-image: -ms-linear-gradient(top, #53BFE1 0%, #2594C3 100%);
+					background-image: -moz-linear-gradient(top, #53BFE1 0%, #2594C3 100%);
+					background-image: -o-linear-gradient(top, #53BFE1 0%, #2594C3 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #53BFE1), color-stop(1, #2594C3));
+					background-image: -webkit-linear-gradient(top, #53BFE1 0%, #2594C3 100%);
+					background-image: linear-gradient(to bottom, #53BFE1 0%, #2594C3 100%);
+					line-height: 45px;
+					-webkit-border-radius: 100%;
+					-moz-border-radius: 100%;
+					border-radius: 100%;
+				}
+			}
+		}//category
+	}//items
+	.description{
+		margin-top: 42px;
+		.chemical_composition{
+			padding: 28px;
+			background: #f3f3f3;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			border-radius: 8px;
+			margin-bottom: 62px;
+			h2{
+				font-size: 20px !important;
+				margin-bottom: 10px;
+			}
+			.elements{
+				display: inline-block;
+				color: #324141;
+				width: 449px;
+				p{
+					font-size: 16px;
+					font-family: pt_sans_bold;
+				}
+				ul{
+					list-style: none;
+					padding-left: 10px;
+					li{
+						font-size: 14px;
+						font-family: pt_sans_regular;
+						display: inline-block;
+						width: 222px;
+						vertical-align: top;
+						span{
+							width: 161px;
+							display: block;
+							float: left;
+						}
+						b{
+							font-family: pt_sans_bold;
+							font-weight: normal;
+							float: left;
+							display: block;
+						}
+					}
+				}	
+				
+			}
+			#anions{
+				ul{
+					li:nth-child(even){
+						width: 200px;
+						span{width: 95px;}
+					}
+				}
+			}
+				#cations{
+				ul{
+					li{
+						&:nth-child(odd){
+							width: 170px;
+							span{width: 95px;}
+						}
+						&:nth-child(even){
+							span{margin-right: 23px;}
+						}
+						&:last-child{
+							b{margin-top: 21px;}
+						}
+					}
+				}
+			}
+		}
+		h2{margin-bottom: 22px;}
+		.desc-item{
+			display: table;
+			width: 100%;
+			.text{
+				display: table-cell;
+				vertical-align: middle;
+				h3{
+					font-family: pt_sans_bold;
+					font-size: 20px;
+					font-weight: normal;
+					padding-bottom: 20px;
+				}
+				p{
+					padding-bottom: 26px;
+				}
+			}
+			img{
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}//description
+}//inside-content
+
+#mineral-water{
+	h1{color: #2387b1;}
+	
+	#main-menu{
+		ul{
+			background: #c4e4f0;
+			li{
+				.active{
+					background-image: -ms-linear-gradient(top, #56A5C4 0%, #2085B0 100%);
+					background-image: -moz-linear-gradient(top, #56A5C4 0%, #2085B0 100%);
+					background-image: -o-linear-gradient(top, #56A5C4 0%, #2085B0 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #56A5C4), color-stop(1, #2085B0));
+					background-image: -webkit-linear-gradient(top, #56A5C4 0%, #2085B0 100%);
+					background-image: linear-gradient(to bottom, #56A5C4 0%, #2085B0 100%);
+				}
+			}
+		}
+	}//main-menu
+	.items{
+		.category{
+			margin-right: 50px;
+			ul{
+				li{
+					padding-right: 85px;
+					width: auto;
+					margin-top: 0;
+					&:last-child{padding: 0;}
+				}
+			}
+			&:first-child{
+				margin: 0;
+				h1{
+					margin-bottom: 0;
+					margin-top: 45px;
+				}
+				ul{
+					li{
+						padding-right: 12px;
+						&:last-child{padding: 0;}
+					}
+				}
+			}
+			&:last-child{
+				vertical-align: top;
+				h1{margin-bottom: 119px;}
+			}
+		}//category
+	}//items
+
+}//mineral-water
+
+#limonade{
+	h1{color: #fbb35d;}
+	
+	#main-menu{
+		ul{
+			background: #ffe1b1;
+			li{
+				.active{
+					background-image: -ms-linear-gradient(top, #FFAC4A 0%, #F07E2A 100%);
+					background-image: -moz-linear-gradient(top, #FFAC4A 0%, #F07E2A 100%);
+					background-image: -o-linear-gradient(top, #FFAC4A 0%, #F07E2A 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFAC4A), color-stop(1, #F07E2A));
+					background-image: -webkit-linear-gradient(top, #FFAC4A 0%, #F07E2A 100%);
+					background-image: linear-gradient(to bottom, #FFAC4A 0%, #F07E2A 100%);
+				}
+			}
+		}
+	}//main-menu
+	.items{
+		.category{
+			p{
+				background-image: -ms-linear-gradient(top, #FFAC4A 0%, #F0812E 100%);
+				background-image: -moz-linear-gradient(top, #FFAC4A 0%, #F0812E 100%);
+				background-image: -o-linear-gradient(top, #FFAC4A 0%, #F0812E 100%);
+				background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFAC4A), color-stop(1, #F0812E));
+				background-image: -webkit-linear-gradient(top, #FFAC4A 0%, #F0812E 100%);
+				background-image: linear-gradient(to bottom, #FFAC4A 0%, #F0812E 100%);
+			}
+		}//category
+	}//items
+	
+}//limonade
+
+#juice{
+	h1{color: #c12120;}
+	
+	#main-menu{
+		ul{
+			background: #e64a2b;
+			li{
+				.active{
+					background-image: -ms-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+					background-image: -moz-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+					background-image: -o-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E64A2B), color-stop(1, #C02120));
+					background-image: -webkit-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+					background-image: linear-gradient(to bottom, #E64A2B 0%, #C02120 100%);
+				}
+			}
+		}
+	}//main-menu
+	
+	.items{
+		.category{
+			p{
+				background-image: -ms-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+				background-image: -moz-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+				background-image: -o-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+				background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E64A2B), color-stop(1, #C02120));
+				background-image: -webkit-linear-gradient(top, #E64A2B 0%, #C02120 100%);
+				background-image: linear-gradient(to bottom, #E64A2B 0%, #C02120 100%);
+			}
+		}//category
+	}//items
+}

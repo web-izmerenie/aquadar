@@ -1,0 +1,31 @@
+.circle-description { background: #2d96da;}
+
+#presentation{background: #FFF8B1;}
+
+.inside-content #main-menu ul li .active{background: #c4305f;}
+
+.distributor a {background: #ffd708}
+
+.form-call{background: #5fabc8;}
+
+.form-call input[type=submit]{background: #3e5252;}
+
+.distributor a{background: #ffd508;}
+
+.distributor-form{background: #ffdb08;}
+
+.distributor-form input[type=submit]{background: #3e5252;}
+
+#mineral-water #main-menu li .active{background: #3e97bb;}
+
+#mineral-water .items .category ul p{background: #3e97bb;}
+
+#limonade #main-menu li .active{background: #f99b3d;}
+
+#limonade .items .category ul p{background: #f99b3d;}
+
+#juice #main-menu li .active{background: #d23425;}
+
+#juice .items .category ul p{background: #d23425;}
+
+.pagination .active{background: #ffd808;}

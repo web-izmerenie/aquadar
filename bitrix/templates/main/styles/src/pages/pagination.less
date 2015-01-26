@@ -1,0 +1,34 @@
+// main: ../main.less
+
+.pagination{
+	clear: both;
+	height: 28px;
+	margin-top: 15px;
+	margin-bottom: 70px;
+	ul{
+		float: right;
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				font-family: pt_sans_regular;
+				color: #000;
+				font-size: 14px;
+				text-decoration: none;
+				display: block;
+				width: 28px;
+				text-align: center;
+				padding: 3px 0;
+				&.active{
+					background-image: -ms-linear-gradient(top, #FFE60E 0%, #FFCD0E 100%);
+					background-image: -moz-linear-gradient(top, #FFE60E 0%, #FFCD0E 100%);
+					background-image: -o-linear-gradient(top, #FFE60E 0%, #FFCD0E 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFE60E), color-stop(1, #FFCD0E));
+					background-image: -webkit-linear-gradient(top, #FFE60E 0%, #FFCD0E 100%);
+					background-image: linear-gradient(to bottom, #FFE60E 0%, #FFCD0E 100%);
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+}//pagination

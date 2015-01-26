@@ -1,0 +1,45 @@
+// main: ../main.less
+
+@import: '../main.less';
+
+.geo{
+	.inside-content{
+		.map{
+			background: url("@{imgPrefix}map_geo.png") no-repeat center center;
+			width: 928px;
+			height: 551px;
+			margin: 0 auto;
+			margin-bottom: 58px;
+		}
+		.desc-map{
+			h1{
+				font-size: 26px !important;
+				padding-bottom: 35px;
+			}
+			ul{
+				display: inline-block;
+				list-style-image: url("@{imgPrefix}mark.png");
+				vertical-align: top;
+				color: #324141;
+				font-family: pt_sans_bold;
+				font-size: 18px;
+				&:first-of-type{margin-left: 25px;}
+				margin-left: 103px;
+				li{
+					margin-bottom: 20px;
+					ul{
+						display: block;
+						list-style: none;
+						color: #000000;
+						font-size: 16px;
+						font-family: pt_sans_regular;
+						padding-left: 20px;
+						margin: 0;
+						&:first-of-type{margin-left: 0;}
+						li{margin-bottom: 0;}
+					}
+				}
+			}
+		}
+	}//inside-content
+}//geo
