@@ -128,8 +128,8 @@ $(document).ready(function(){
 	accardionVacancies();
 	formShow('.distributor a', '.distributor-form');
 	formShow('a#call-me', '.form-call');
-	mainMenuActive('#top-menu li a');
-	mainMenuActive('#main-menu li a');
+	//mainMenuActive('#top-menu li a');
+	//mainMenuActive('#main-menu li a');
 	topMenu();
 	$(window).resize(function() { imgSize(); });
 	

@@ -1,6 +1,6 @@
 <?php
-	$URI = $_SERVER[REQUEST_URI];
-	$html_classes = array();
+
+$html_classes = array();
 $main_classes = array();
 
 // <html> classes
@@ -88,8 +88,10 @@ $tplPath = "/bitrix/templates/main/";
 			</header><!-- .header-->
 
 			<main class="content">
-			<?if($URI != '/' && $URI != '/index.php'){?>
+			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
 			<section class="inside-content">
+				<h1><?$APPLICATION->ShowTitle(false)?></h1>
+
 				<?$APPLICATION->IncludeComponent(
 						"bitrix:menu",
 						"inside_menu",

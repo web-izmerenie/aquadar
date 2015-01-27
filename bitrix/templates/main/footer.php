@@ -1,4 +1,4 @@
-<?if($URI != '/' || $URI != '/index.php'){?>
+<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
 	</section>
 <?}?>
 </main><!-- .content -->
