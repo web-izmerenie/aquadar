@@ -1,4 +1,6 @@
-				
+<?if($URI != '/' || $URI != '/index.php'){?>
+	</section>
+<?}?>
 </main><!-- .content -->
 				<form class="form-call">
 					<h3>Заказать звонок</h3>

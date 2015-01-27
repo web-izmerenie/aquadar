@@ -186,6 +186,9 @@ html body .wrapper .header #right-column #top-menu li a {
 html body .wrapper .header #right-column #top-menu li a:hover {
   color: #BF2267;
 }
+html body .wrapper .header #right-column #top-menu li .active {
+  color: #BF2267;
+}
 html body .wrapper .header #right-column #top-menu li .inside-menu {
   position: absolute;
   display: none;
@@ -1973,6 +1976,9 @@ html body .wrapper .header #right-column #top-menu li a {
   font-family: pt_sans_regular;
 }
 html body .wrapper .header #right-column #top-menu li a:hover {
+  color: #BF2267;
+}
+html body .wrapper .header #right-column #top-menu li .active {
   color: #BF2267;
 }
 html body .wrapper .header #right-column #top-menu li .inside-menu {
