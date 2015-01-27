@@ -1,4 +1,5 @@
-				</main><!-- .content -->
+				
+</main><!-- .content -->
 				<form class="form-call">
 					<h3>Заказать звонок</h3>
 					<a href="#close" class="close">×</a>

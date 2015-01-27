@@ -36,30 +36,30 @@ if(defined("VACANCIES"))
 
 $html_classes = implode(" ", $html_classes);
 
+$tplPath = "/bitrix/templates/main/";
 ?>
 <!DOCTYPE html>
 <html class="<?=$html_classes?>">
 	<head>
 		<meta charset="utf-8" />
 		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<!--[if gte IE 9]><link href="/template/main/styles/src/ie9.css" rel="stylesheet"><![endif]-->
-		<title>Aquadar</title>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<link href="/template/main/styles/build/build.css" rel="stylesheet">
-        <script type="text/javascript" src="/template/main/scripts/plugins/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="/template/main/scripts/src/main.js"></script> 
-		<script type="text/javascript" src="/template/main/scripts/plugins/jquery.placeholder.min.js"></script>
-		<script type="text/javascript" src="/template/main/scripts/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
-		<script type="text/javascript" src="/template/main/scripts/plugins/jquery.fancybox.pack.js"></script>
+		<!--[if gte IE 9]><link href="<?=$tplPath?>styles/src/ie9.css" rel="stylesheet"><![endif]-->
+		<title><?$APPLICATION->ShowTitle()?></title>
+		 <?$APPLICATION->ShowHead()?>
+		<link href="<?=$tplPath?>styles/build/build.css" rel="stylesheet">
+        <script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="<?=$tplPath?>scripts/src/main.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.fancybox.pack.js"></script>
 	</head>
 
 	<body>
-
+		 <?$APPLICATION->ShowPanel();?>
 		<div class="wrapper">
 
 			<header class="header">
-				
+
 				<section class="content-frame">
 					<a href="/" id="logo"></a>
 					<section id="right-column">
@@ -67,21 +67,22 @@ $html_classes = implode(" ", $html_classes);
 							<b>+7 (863) 223-35-35</b>
 							<a id="call-me" href="#call_me">Перезвоните мне</a>
 						</div>
-						<nav id="top-menu">
-							<ul>
-								<li><a href="/structure.php">О компании</a></li>
-								<li><a href="/manufacture.php">Производство</a></li>
-								<li><a href="#">Продукция</a>
-									<ul class="inside-menu">
-										<li><a href="/mineral_water.php">Минеральная вода</a></li>
-										<li><a href="/limonade.php">Лимонады</a></li>
-										<li><a href="/juice.php">Сокосодержащие напитки</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Дистрибуция</a></li>
-								<li><a href="/contacts.php">Контакты</a></li>
-							</ul>
-						</nav>
+						<?$APPLICATION->IncludeComponent(
+							"bitrix:menu",
+							"main_menu",
+							Array(
+								"ROOT_MENU_TYPE" => "main",
+								"MENU_CACHE_TYPE" => "A",
+								"MENU_CACHE_TIME" => "3600",
+								"MENU_CACHE_USE_GROUPS" => "Y",
+								"MENU_CACHE_GET_VARS" => "",
+								"MAX_LEVEL" => "2",
+								"CHILD_MENU_TYPE" => "inside",
+								"USE_EXT" => "N",
+								"DELAY" => "N",
+								"ALLOW_MULTI_SELECT" => "N"
+							)
+						);?>
 					</section>
 				</section>
 			</header><!-- .header-->

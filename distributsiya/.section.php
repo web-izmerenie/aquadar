@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Дистрибуция";
+$arDirProperties = Array(
+
+);
+?>
