@@ -1,10 +1,9 @@
-<?define("NEWS", "Y");?>
+<?define("PUBLISHING", "Y");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Новости");
-$APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent("bitrix:news", "news", array(
+$APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent("bitrix:news", "publication", array(
 	"IBLOCK_TYPE" => "content",
-	"IBLOCK_ID" => "5",
-	"NEWS_COUNT" => "9",
+	"IBLOCK_ID" => "6",
+	"NEWS_COUNT" => "3",
 	"USE_SEARCH" => "N",
 	"USE_RSS" => "N",
 	"USE_RATING" => "N",
@@ -13,10 +12,10 @@ $APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent
 	"SORT_BY1" => "ACTIVE_FROM",
 	"SORT_ORDER1" => "DESC",
 	"SORT_BY2" => "SORT",
-	"SORT_ORDER2" => "DESC",
+	"SORT_ORDER2" => "ASC",
 	"CHECK_DATES" => "Y",
 	"SEF_MODE" => "Y",
-	"SEF_FOLDER" => "/about/novosti/",
+	"SEF_FOLDER" => "/about/publication/",
 	"AJAX_MODE" => "N",
 	"AJAX_OPTION_JUMP" => "N",
 	"AJAX_OPTION_STYLE" => "Y",
@@ -32,7 +31,7 @@ $APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent
 	"ADD_ELEMENT_CHAIN" => "N",
 	"USE_PERMISSIONS" => "N",
 	"PREVIEW_TRUNCATE_LEN" => "",
-	"LIST_ACTIVE_DATE_FORMAT" => "",
+	"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 	"LIST_FIELD_CODE" => array(
 		0 => "",
 		1 => "",
@@ -46,7 +45,7 @@ $APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent
 	"META_KEYWORDS" => "-",
 	"META_DESCRIPTION" => "-",
 	"BROWSER_TITLE" => "NAME",
-	"DETAIL_ACTIVE_DATE_FORMAT" => "",
+	"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 	"DETAIL_FIELD_CODE" => array(
 		0 => "",
 		1 => "",
@@ -59,7 +58,7 @@ $APPLICATION->SetTitle("О компании");?><?$APPLICATION->IncludeComponent
 	"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 	"DETAIL_PAGER_TITLE" => "Страница",
 	"DETAIL_PAGER_TEMPLATE" => "",
-	"DETAIL_PAGER_SHOW_ALL" => "N",
+	"DETAIL_PAGER_SHOW_ALL" => "Y",
 	"PAGER_TEMPLATE" => "page_navigation",
 	"DISPLAY_TOP_PAGER" => "N",
 	"DISPLAY_BOTTOM_PAGER" => "Y",
