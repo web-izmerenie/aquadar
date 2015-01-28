@@ -15,10 +15,24 @@
 				</a>
 				<div class="prewiev-text"><?=$arItem["PREVIEW_TEXT"];?></div>
 			</li>
+		<?}
+			unset($arItem);
+		?>
+	</ul>
+</div>
+<div class="other_news">
+	<ul>
+		<?foreach(array_slice ($arResult["ITEMS"], 3) as $arItem){?>
+			<li>
+				<a class="img" href="<?=$arItem['DETAIL_PAGE_URL'];?>"><img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>"></a>
+				<div class="prewiev-text">
+					<a href="<?=$arItem['DETAIL_PAGE_URL'];?>"><span><?=$arItem['NAME'];?></span></a>
+					<?=$arItem['PREVIEW_TEXT'];?>
+				</div>
+			</li>
 		<?}?>
 	</ul>
 </div>
-
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?>
 <?endif;?>
