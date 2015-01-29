@@ -9,11 +9,11 @@
 <section class="next-news">
 	<ul>
 		<?if(is_array($arResult["TOLEFT"])):?>
-			<li><a href="<?=$arResult["TOLEFT"]["URL"]?>"><img src="<?=$arResult["TOLEFT"]["PICTURE"]?>"><span><?=$arResult["TOLEFT"]["NAME"]?></span></a></li>
+			<li><a href="<?=$arResult["TOLEFT"]["URL"]?>"><img src="<?=$arResult["TOLEFT"]["PICTURE"]?>"><p><?=$arResult["TOLEFT"]["NAME"]?></p></a><span>&#8592;</span></li>
 		<?endif?>
 
 		<?if(is_array($arResult["TORIGHT"])):?>
-			<li><a href="<?=$arResult["TORIGHT"]["URL"]?>"><img src="<?=$arResult["TORIGHT"]["PICTURE"]?>"><span><?=$arResult["TORIGHT"]["NAME"]?></span></a></li>
+			<li><a href="<?=$arResult["TORIGHT"]["URL"]?>"><img src="<?=$arResult["TORIGHT"]["PICTURE"]?>"><p><?=$arResult["TORIGHT"]["NAME"]?></p></a><span>&#8594;</span></li>
 		<?endif?>
 
 	</ul>
