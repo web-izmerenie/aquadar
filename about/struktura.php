@@ -47,4 +47,6 @@ $APPLICATION->SetTitle("О компании");?>
 			<li><img src="/upload/structure-item6.jpg"><p>Собственное производство</p></li>
 			<li><img src="/upload/structure-item7.jpg"><p>Контроль качества</p></li>
 		</ul>
-	</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+	</div>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

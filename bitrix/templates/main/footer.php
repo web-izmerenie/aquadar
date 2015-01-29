@@ -1,5 +1,12 @@
 <?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
 	</section>
+	<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
+	"AREA_FILE_SHOW" => "page",
+	"AREA_FILE_SUFFIX" => "inc",
+	"EDIT_TEMPLATE" => ""
+	),
+	false
+);?>
 <?}?>
 </main><!-- .content -->
 				<form class="form-call">
