@@ -1,32 +1,45 @@
-// main: ../main.less
+@import "news.less";
 
-.publishing{
-	.inside-content{
-		.publishing-view{
-			width: 810px;
-			ul{
-				list-style: none;
-				li{
-					margin-bottom: 45px;
-					a{
-						color: #c1c6c6;
-						font-family: pt_sans_bold;
-						font-size: 24px;
-						img{
-							display: block;
-							border: none;
-						}
-						span{
-							padding: 23px 0 28px;
-							display: block;
-							color: #324141;
-						}
-					}
-					.text{
-						width: 725px;
-					}
-				}
-			}
-		}//publishing-view
-	}//inside-content
-}//publishing
+.publishing {
+    .inside-content {
+        .publishing-view {
+            width: 810px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 45px;
+
+                    a {
+                        color: #c1c6c6;
+                        font-family: pt_sans_bold;
+                        font-size: 24px;
+
+                        img {
+                            display: block;
+                            border: none;
+                        }
+
+                        span {
+                            padding: 23px 0 28px;
+                            display: block;
+                            color: #324141;
+                        }
+                    }
+
+                    .text { width: 725px; }
+                }
+            }
+        }
+
+        //publishing-view
+        .publication-detail {
+            width: 735px;
+            .detailNewsMixin();
+        }
+        //publication-detail
+    }
+    //inside-content
+}
+//publishing

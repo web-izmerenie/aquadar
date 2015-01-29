@@ -1,16 +1,18 @@
 <?
 $arUrlRewrite = array(
 	array(
-		"CONDITION" => "#^/about/publication/#",
-		"RULE" => "",
-		"ID" => "bitrix:news",
-		"PATH" => "/about/publication/index.php",
+		"CONDITION" => "#^/about/publication/(.*?).html(\\?.*\$|\$)#",
+		"RULE" => "&ELEMENT_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/about/publication/detail.php",
+		"SORT" => "100",
 	),
 	array(
-		"CONDITION" => "#^/about/novosti/#",
-		"RULE" => "",
-		"ID" => "bitrix:news",
-		"PATH" => "/about/novosti/index.php",
+		"CONDITION" => "#^/about/novosti/(.*?).html(\\?.*\$|\$)#",
+		"RULE" => "&ELEMENT_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/about/novosti/detail.php",
+		"SORT" => "100",
 	),
 );
 

@@ -124,7 +124,7 @@ $(document).ready(function(){
 	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
-	fixHeader();
+	//fixHeader();
 	accardionVacancies();
 	formShow('.distributor a', '.distributor-form');
 	formShow('a#call-me', '.form-call');

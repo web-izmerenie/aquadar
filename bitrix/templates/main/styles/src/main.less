@@ -1,3 +1,4 @@
+//main: null
 //import
 @import 'pages/structure.less';
 @import 'pages/distributor.less';
@@ -92,6 +93,10 @@ html {
 			.header {
 				height: 128px;
 				background: url("@{imgPrefix}header.jpg") repeat-x;
+				position: fixed;
+				top: 0px;
+				width: 100%;
+				z-index: 2;
 				#logo{
 					background: url("@{imgPrefix}logo.png") no-repeat center center;
 					display: block;
@@ -172,7 +177,7 @@ html {
 				}//right-column
 			}//header
 			.content {
-				padding: 0 0 100px;
+				padding: 128px 0 100px;
 				#main-top{
 					background: url("@{imgPrefix}main-top.png") repeat-x;
 					height: 358px;
