@@ -1,30 +1,33 @@
 <?
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
-	die();
 
-//determine if child selected
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-$bWasSelected = false;
-$arParents = array();
-$depth = 1;
-foreach($arResult as $i=>$arMenu)
-{
-	$depth = $arMenu['DEPTH_LEVEL'];
+$menuList = array();
+$lev = 0;
+$lastInd = 0;
+$parents = array();
 
-	if($arMenu['IS_PARENT'] == true)
-	{
-		$arParents[$arMenu['DEPTH_LEVEL']-1] = $i;
+foreach ($arResult as $arItem) {
+	$lev = $arItem['DEPTH_LEVEL'];
+
+	if ($arItem['IS_PARENT']) {
+		$arItem['CHILDREN'] = array();
 	}
-	elseif($arMenu['SELECTED'] == true)
-	{
-		$bWasSelected = true;
-		break;
+
+	if ($lev == 1) {
+
+		$menuList[] = $arItem;
+		$lastInd = count($menuList)-1;
+		$parents[$lev] = &$menuList[$lastInd];
+
+	} else {
+
+		$parents[$lev-1]['CHILDREN'][] = $arItem;
+		$lastInd = count($parents[$lev-1]['CHILDREN'])-1;
+		$parents[$lev] = &$parents[$lev-1]['CHILDREN'][$lastInd];
+
 	}
+
 }
 
-if($bWasSelected)
-{
-	for($i=0; $i<$depth-1; $i++)
-		$arResult[$arParents[$i]]['CHILD_SELECTED'] = true;
-}
-?>
+$arResult = $menuList;

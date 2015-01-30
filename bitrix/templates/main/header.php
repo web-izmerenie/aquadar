@@ -91,21 +91,22 @@ $tplPath = "/bitrix/templates/main/";
 			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
 			<section class="inside-content">
 				<h1><?$APPLICATION->ShowTitle(false)?></h1>
-
-				<?$APPLICATION->IncludeComponent(
-						"bitrix:menu",
-						"inside_menu",
-						Array(
-							"ROOT_MENU_TYPE" => "inside",
-							"MENU_CACHE_TYPE" => "A",
-							"MENU_CACHE_TIME" => "3600",
-							"MENU_CACHE_USE_GROUPS" => "Y",
-							"MENU_CACHE_GET_VARS" => "",
-							"MAX_LEVEL" => "1",
-							"CHILD_MENU_TYPE" => "",
-							"USE_EXT" => "N",
-							"DELAY" => "N",
-							"ALLOW_MULTI_SELECT" => "N"
-						)
-					);?>
+				<?if(!defined("NO_INSIDE_MENU")){?>
+					<?$APPLICATION->IncludeComponent(
+							"bitrix:menu",
+							"inside_menu",
+							Array(
+								"ROOT_MENU_TYPE" => "inside",
+								"MENU_CACHE_TYPE" => "A",
+								"MENU_CACHE_TIME" => "3600",
+								"MENU_CACHE_USE_GROUPS" => "Y",
+								"MENU_CACHE_GET_VARS" => "",
+								"MAX_LEVEL" => "1",
+								"CHILD_MENU_TYPE" => "",
+								"USE_EXT" => "N",
+								"DELAY" => "N",
+								"ALLOW_MULTI_SELECT" => "N"
+							)
+						);?>
+					<?}?>
 				<?}?>

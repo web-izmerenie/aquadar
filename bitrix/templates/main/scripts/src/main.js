@@ -46,16 +46,6 @@ $(document).ready(function(){
 		});
 	}
 	
-	function mainMenuActive(attrLink){
-		var path = window.location.pathname;
-		var linkMenu = $(attrLink);
-		$(linkMenu).each(function(){
-			if(path === $(this).attr('href')){
-				$(this).addClass('active');
-			}
-		});
-	}
-	
 	function formShow(linkActive, formActive){
 		$(linkActive).click( function(event){
 			event.preventDefault();
@@ -107,29 +97,18 @@ $(document).ready(function(){
 		});
 	}
 	
-	function fixHeader(){
-		$(window).scroll(function() {
-			var top = $(document).scrollTop();
-			if 
-				(top < 1) $(".header").css({top: '0', 
-										   position: 'relative'});
-			else 
-				$(".header").css({top: '0px', 
-								  position: 'fixed',
-								  width: '100%',
-								  'z-index': 2
-								 });
+	function banLinks(){
+		$("a[href='/productions/']").click(function(event){
+			event.preventDefault();
 		});
-	};
+	}
 	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
-	//fixHeader();
 	accardionVacancies();
+	banLinks();
 	formShow('.distributor a', '.distributor-form');
 	formShow('a#call-me', '.form-call');
-	//mainMenuActive('#top-menu li a');
-	//mainMenuActive('#main-menu li a');
 	topMenu();
 	$(window).resize(function() { imgSize(); });
 	

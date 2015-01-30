@@ -50,4 +50,3 @@ $arResult["NAV"]["URL"]["SHOW_ALL"] = MakeNewNavUrl(array($arResult["NAV"]["SHOW
 
 // show by page url
 $arResult["NAV"]["URL"]["SHOW_BY_PAGE"] = MakeNewNavUrl(array($arResult["NAV"]["SHOWALL_ID"]=>0));
-?>

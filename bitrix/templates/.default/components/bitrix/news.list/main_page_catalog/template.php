@@ -1,9 +1,9 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <div id="main-bottom">
-		<div class="content-frame">
+	<div class="content-frame">
 
-<?foreach($arResult["ITEMS"] as $arItem):?>
+		<?foreach($arResult["ITEMS"] as $arItem):?>
 
 
 			<a href="#" class="main-items">
@@ -17,7 +17,7 @@
 				</div>
 			</a>
 
-<?endforeach;?>
+		<?endforeach;?>
 
-		</div>
 	</div>
+</div>
