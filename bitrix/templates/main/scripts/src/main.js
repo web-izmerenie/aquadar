@@ -91,9 +91,8 @@ $(document).ready(function(){
 	
 	function accardionVacancies(){
 		$('.vacancies-view > li > a').click(function(event){
-			event.preventDefault();
-			$('.vacancies-view > li > .text').slideUp();	
-			$(this).parent().find('.text').slideDown();
+			event.preventDefault();	
+			$(this).parent().find('.text').toggle("slow");
 		});
 	}
 	

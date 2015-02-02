@@ -8,6 +8,20 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Награды и сертификаты", 
+		"/about/honors/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"География поставок", 
+		"/about/geografiya-postavok.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Новости", 
 		"/about/novosti/", 
 		Array(), 
@@ -17,6 +31,20 @@ $aMenuLinks = Array(
 	Array(
 		"Публикации", 
 		"/about/publication/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/about/reviews.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"/about/vakansii.php", 
 		Array(), 
 		Array(), 
 		"" 

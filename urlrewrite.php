@@ -1,7 +1,14 @@
 <?
 $arUrlRewrite = array(
 	array(
-		"CONDITION" => "#^/about/publication/(.*?).html(\\?.*\$|\$)#",
+		"CONDITION" => "#^/productions/mineralnaya-voda/(.+?)/(\\?.*\$|\$)#",
+		"RULE" => "&SECTION_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/productions/mineralnaya-voda/elements_list.php",
+		"SORT" => "100",
+	),
+	array(
+		"CONDITION" => "#^/about/publication/(.*?)\\.html(\\?.*\$|\$)#",
 		"RULE" => "&ELEMENT_CODE=\$1",
 		"ID" => "",
 		"PATH" => "/about/publication/detail.php",
