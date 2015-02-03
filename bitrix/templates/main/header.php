@@ -34,7 +34,17 @@ if(defined("REVIEWS"))
 if(defined("VACANCIES"))
 	$html_classes[] = "vacancies";
 
+if(defined("MINERAL_WATER_ITEMS"))
+	$main_classes[] = "mineral-water";
+
+if(defined("LIMONADE"))
+	$main_classes[] = "limonade";
+
+if(defined("JUICE"))
+	$main_classes[] = "juice";
+
 $html_classes = implode(" ", $html_classes);
+$main_classes = implode(" ", $main_classes);
 
 $tplPath = "/bitrix/templates/main/";
 ?>
@@ -89,7 +99,7 @@ $tplPath = "/bitrix/templates/main/";
 
 			<main class="content">
 			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
-			<section class="inside-content">
+			<section id="<?=$main_classes;?>" class="inside-content">
 				<h1><?$APPLICATION->ShowTitle(false)?></h1>
 				<?if(!defined("NO_INSIDE_MENU")){?>
 					<?$APPLICATION->IncludeComponent(

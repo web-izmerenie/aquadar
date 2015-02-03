@@ -1,5 +1,7 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->IncludeComponent("bitrix:catalog.section", "item_mineral_water", array(
+<?define("MINERAL_WATER_ITEMS", "Y");
+define("NO_INSIDE_MENU", "Y");
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->IncludeComponent("bitrix:catalog.section", "mineral_water", array(
 	"IBLOCK_TYPE" => "catalog",
 	"IBLOCK_ID" => "9",
 	"SECTION_ID" => "",
@@ -9,12 +11,12 @@ $APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->Incl
 		1 => "",
 	),
 	"ELEMENT_SORT_FIELD" => "sort",
-	"ELEMENT_SORT_ORDER" => "desc",
+	"ELEMENT_SORT_ORDER" => "asc",
 	"ELEMENT_SORT_FIELD2" => "id",
 	"ELEMENT_SORT_ORDER2" => "desc",
 	"FILTER_NAME" => "arrFilter",
 	"INCLUDE_SUBSECTIONS" => "A",
-	"SHOW_ALL_WO_SECTION" => "Y",
+	"SHOW_ALL_WO_SECTION" => "N",
 	"PAGE_ELEMENT_COUNT" => "30",
 	"LINE_ELEMENT_COUNT" => "3",
 	"PROPERTY_CODE" => array(
@@ -22,14 +24,6 @@ $APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->Incl
 		1 => "",
 	),
 	"OFFERS_LIMIT" => "5",
-	"TEMPLATE_THEME" => "",
-	"ADD_PICT_PROP" => "-",
-	"LABEL_PROP" => "-",
-	"MESS_BTN_BUY" => "Купить",
-	"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-	"MESS_BTN_SUBSCRIBE" => "Подписаться",
-	"MESS_BTN_DETAIL" => "Подробнее",
-	"MESS_NOT_AVAILABLE" => "Нет в наличии",
 	"SECTION_URL" => "",
 	"DETAIL_URL" => "",
 	"SECTION_ID_VARIABLE" => "SECTION_CODE",
@@ -64,9 +58,9 @@ $APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->Incl
 	"PARTIAL_PRODUCT_PROPERTIES" => "N",
 	"PRODUCT_PROPERTIES" => array(
 	),
-	"PAGER_TEMPLATE" => "page_navigation",
+	"PAGER_TEMPLATE" => "",
 	"DISPLAY_TOP_PAGER" => "N",
-	"DISPLAY_BOTTOM_PAGER" => "Y",
+	"DISPLAY_BOTTOM_PAGER" => "N",
 	"PAGER_TITLE" => "Товары",
 	"PAGER_SHOW_ALWAYS" => "N",
 	"PAGER_DESC_NUMBERING" => "N",
