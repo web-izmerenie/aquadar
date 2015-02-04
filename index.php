@@ -88,4 +88,11 @@ $APPLICATION->SetTitle("Аквадар");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+<section id="presentation">
+	<a href="/presentation/">
+		<img src="/upload/present.png">
+		<p><span>Как мы добываем минеральную воду</span> &rarr;</p>
+	</a>
+</section>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
