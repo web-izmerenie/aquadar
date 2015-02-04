@@ -5,8 +5,7 @@
 
 		<?foreach($arResult["ITEMS"] as $arItem):?>
 
-
-			<a href="#" class="main-items">
+			<a href="<?=$arItem["PROPERTIES"]["ATT_LINK"]["~VALUE"];?>" class="main-items">
 				<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"];?>">
 				<div class="circle-description" id="<?=$arItem["PROPERTIES"]["ATT_COLOR_BACKGROUND"]["VALUE_XML_ID"];?>">
 					<div class="circle-content">

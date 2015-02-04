@@ -22,11 +22,11 @@
             </div><!-- .wrapper -->
         <footer class="footer">
 			<section class="content-frame">
-				<div id="social-block">
+				<!--<div id="social-block">
 					<a href="http://facebook.com" id="facebook"></a>
 					<a href="http://vk.com" id="vk"></a>
 					<a href="http://instagram.com" id="instagram"></a>
-				</div>
+				</div>-->
 				<a id="developer" href="http://web-izmerenie.ru">Сделано в</a>
 			</section>
         </footer><!-- .footer -->

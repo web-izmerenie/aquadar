@@ -37,6 +37,9 @@ if(defined("VACANCIES"))
 if(defined("DISTRIBUTION"))
 	$html_classes[] = "distribution";
 
+if(defined("PRESENT"))
+	$html_classes[] = "presentation";
+
 if(defined("MINERAL_WATER_ITEMS"))
 	$main_classes[] = "mineral-water";
 

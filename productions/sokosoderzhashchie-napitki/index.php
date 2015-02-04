@@ -2,38 +2,37 @@
 define("NO_INSIDE_MENU", "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Сокосодержащие напитки");
-?>
-<nav id="main-menu">
+?><div id="main-menu">
 	<ul>
-		<li><a class="active" href="/structure.php">ТМ «Южный день»</a></li>
+		<li><a class="active" href="/productions/sokosoderzhashchie-napitki/">ТМ «Южный день»</a></li>
 	</ul>
-</nav>
-<section class="preview-text">
+</div>
+<div class="preview-text">
 <p>Сокосодержащий напиток «Южный день». Негазированный с пробкой «непроливайкой»</p>
-</section>
-<section class="items">
+</div>
+<div class="items">
 	<div class="category">
 		<ul>
-			<li><img src="/upload/juice/vinograd-0-5.png"><span>Виноград</span><p>0,5 л</p></li>
-			<li><img src="/upload/juice/granat-0-5.png"><span>Гранат</span><p>0,5 л</p></li>
-			<li><img src="/upload/juice/klubnika-0-5.png"><span>Клубника</span><p>0,5 л</p></li>
-			<li><img src="/upload/juice/yagody-0-5.png"><span>Лесная ягода</span><p>0,5 л</p></li>
-			<li><img src="/upload/juice/multi-0-5.png"><span>Мультифрукт</span><p>0,5 л</p></li>
-			<li><img src="/upload/juice/persik-0-5.png"><span>Персик</span><p>0,5 л</p></li>
+			<li><img src="/upload/juice/vinograd-0-5.png">Виноград<p>0,5 л</p></li>
+			<li><img src="/upload/juice/granat-0-5.png">Гранат<p>0,5 л</p></li>
+			<li><img src="/upload/juice/klubnika-0-5.png">Клубника<p>0,5 л</p></li>
+			<li><img src="/upload/juice/yagody-0-5.png">Лесная ягода<p>0,5 л</p></li>
+			<li><img src="/upload/juice/multi-0-5.png">Мультифрукт<p>0,5 л</p></li>
+			<li><img src="/upload/juice/persik-0-5.png">Персик<p>0,5 л</p></li>
 		</ul>
 	</div>
 	<div class="category">
 		<ul>
-			<li><img src="/upload/juice/vinograd-2.png"><span>Виноград</span><p>2 л</p></li>
-			<li><img src="/upload/juice/granat-2.png"><span>Гранат</span><p>2 л</p></li>
-			<li><img src="/upload/juice/klubnika-2.png"><span>Клубника</span><p>2 л</p></li>
-			<li><img src="/upload/juice/yagody-2.png"><span>Лесная ягода</span><p>2 л</p></li>
-			<li><img src="/upload/juice/multi-2.png"><span>Мультифрукт</span><p>2 л</p></li>
-			<li><img src="/upload/juice/persik-2.png"><span>Персик</span><p>2 л</p></li>
+			<li><img src="/upload/juice/vinograd-2.png">Виноград<p>2 л</p></li>
+			<li><img src="/upload/juice/granat-2.png">Гранат<p>2 л</p></li>
+			<li><img src="/upload/juice/klubnika-2.png">Клубника<p>2 л</p></li>
+			<li><img src="/upload/juice/yagody-2.png">Лесная ягода<p>2 л</p></li>
+			<li><img src="/upload/juice/multi-2.png">Мультифрукт<p>2 л</p></li>
+			<li><img src="/upload/juice/persik-2.png">Персик<p>2 л</p></li>
 		</ul>
 	</div>
-</section>
-<section class="description">
+</div>
+<div class="description">
 	<h2>Почему покупают наши сокосодержащие напитки?</h2>
 	<div class="desc-item">
 
@@ -52,6 +51,5 @@ $APPLICATION->SetTitle("Сокосодержащие напитки");
 и их состав подобраны таким образом, чтобы хорошо утолять жажду и оставаться легкими для питья.</p>
 		</div>
 	</div>
-</section>
-<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+</div>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
