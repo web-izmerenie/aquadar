@@ -25,7 +25,6 @@ $APPLICATION->SetTitle("Производство");?><b>Наш завод по&n
 <p>Мы&nbsp;рады предложить вам полезную и&nbsp;вкусную минеральную воду «Серебряная» по <br>
 доступной цене! </p>
 <b>Стать нашим дистрибутором вы&nbsp;можете, отправив заявку или позвонив нам по<br>
-телефону (863) 223-35-35. Наши менеджеры ответят на&nbsp;все интересующие вас вопросы и <br>
+телефону (863) 223-35-35. Наши менеджеры ответят на&nbsp;все интересующие вас вопросы и 
 помогут с&nbsp;организацией поставок в&nbsp;ваш регион.</b>
-<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
