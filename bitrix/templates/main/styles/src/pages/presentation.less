@@ -1,3 +1,6 @@
+
+@import '../main.less';
+
 .presentation{
 	.inside-content{
 		h1{
@@ -29,6 +32,27 @@
 			.text-top{
 				width: 405px;
 			}//text-top
+			.video{
+				position: relative;
+				width: 954px;
+				height: 537px;
+				video{
+					width: 954px;
+					height: 537px;
+				}
+				.play{
+					display: block;
+					background: url('@{imgPrefix}control.png') no-repeat;
+					width: 168px;
+					height: 168px;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: -84px;
+					margin-top: -84px;
+					z-index: 1;
+				}
+			}//video
 			.text-bottom{
 				margin-top: 120px;
 				img{

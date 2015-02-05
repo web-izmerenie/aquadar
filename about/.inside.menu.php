@@ -29,13 +29,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Публикации", 
-		"/about/publication/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Отзывы", 
 		"/about/reviews.php", 
 		Array(), 

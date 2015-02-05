@@ -102,6 +102,25 @@ $(document).ready(function(){
 		});
 	}
 	
+	function playVideo(){
+		$('.video').each(function () {
+			var $vb = $(this);
+			var $video = $vb.find('video');
+			$vb.find('.play').on('click', function () {
+				$(this).fadeOut(
+					300,
+					function () {
+						$(this).remove();
+						$video
+							.attr('controls', 'controls')
+							.each(function () { this.play(); });
+					}
+				)
+				return false;
+			});
+		});
+	}
+	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
 	accardionVacancies();
@@ -110,6 +129,7 @@ $(document).ready(function(){
 	formShow('a#call-me', '.form-call');
 	topMenu();
 	$(window).resize(function() { imgSize(); });
+	playVideo();
 	
 	//init Plugins
 	$('input, textarea').placeholder();

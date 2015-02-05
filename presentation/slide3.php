@@ -7,7 +7,13 @@ $APPLICATION->SetTitle("Разливаем и упаковываем");?>
 		<p>Мы производим и упаковываем до 18 000 бутылок в час.</p>
 	</section>
 	<section class="video">
-		<img src="/upload/present/video.jpg">
+		<a class="play" href="#play"></a>
+		<video poster="/upload/present/video.jpg">
+			<source src="/upload/video/Rolik_Akvadar_New_01.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<source src="/upload/video/Rolik_Akvadar_New_01.webmsd.webm" type='video/webm; codecs="vp8, vorbis"'>
+			<source src="/upload/karier/video/video.ogg">
+			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
+		</video>
 	</section>
 	<section class="text-bottom">
 		<img src="/upload/present/slide3.jpg">
