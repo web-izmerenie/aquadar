@@ -52,4 +52,6 @@ $APPLICATION->SetTitle("Сокосодержащие напитки");
 		</div>
 	</div>
 </div>
-<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_feedback.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

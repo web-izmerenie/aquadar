@@ -54,5 +54,6 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 		<img src="/upload/mineral_water/desc3.jpg">
 	</div>
 </section>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_feedback.php");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

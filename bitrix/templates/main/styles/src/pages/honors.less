@@ -1,49 +1,61 @@
-// main: ../main.less
+.honorsMixin() {
+    h1 {
+        color: #55a0bc !important;
+        font-size: 32px !important;
+        padding-bottom: 28px;
+    }
 
-.honorsMixin(){
-	h1{
-		color: #55a0bc !important;
-		font-size: 32px !important;
-		padding-bottom: 28px;
-	}
-	ul{
-		list-style: none;
-		li{
-			display: inline-block;
-			margin-left: 50px;
-			&:first-child{margin: 0;}
-			a{
-				img{border: none;}
-			}
-		}
-	}
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-left: 50px;
+
+            &:first-child { margin: 0; }
+
+            a img { border: none; }
+        }
+    }
 }
 
-.honors{
-	.inside-content{
-		.honors_prewiev{
-			margin-bottom: 40px;
-			.honorsMixin();
-			.show_more{
-				text-align: center;
-				display: block;
-				a{
-					border-bottom: 1px dotted #c1c6c6;
-					color: #324141;
-					font-family: pt_sans_bold;
-					font-size: 22px;
-					text-decoration: none;
-				}
-			}
-		}//honors_prewiev
-		.more_honors{
-			.honorsMixin();
-			ul{
-				li{
-					&:nth-child(4n + 1){margin-left: 0;}
-					margin-bottom: 50px;
-				}
-			}
-		}//more_honors
-	}//inside-content
-}//honors
+.honors {
+    .inside-content {
+        .honors_prewiev {
+            margin-bottom: 40px;
+            .honorsMixin();
+
+            .show_more {
+                text-align: center;
+                display: block;
+
+                a {
+                    border-bottom: 1px dotted #c1c6c6;
+                    color: #324141;
+                    font-family: pt_sans_bold;
+                    font-size: 22px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #BF2267;
+                        border-bottom: 1px dotted #BF2267;
+                    }
+                }
+            }
+        }
+
+        //honors_prewiev
+        .more_honors {
+            .honorsMixin();
+
+            ul li {
+                &:nth-child(4n + 1) { margin-left: 0; }
+
+                margin-bottom: 50px;
+            }
+        }
+        //more_honors
+    }
+    //inside-content
+}
+//honors

@@ -39,6 +39,46 @@ $APPLICATION->SetTitle("О компании");?>
 				<img width="198px" src="/upload/certificate/bistra/cert_7.jpg">
 			</a>
 		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/002.jpg">
+				<img width="198px" src="/upload/certificate/bistra/002.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/006.jpg">
+				<img width="198px" src="/upload/certificate/bistra/006.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/009.jpg">
+				<img width="198px" src="/upload/certificate/bistra/009.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/013.jpg">
+				<img width="198px" src="/upload/certificate/bistra/013.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/012.jpg">
+				<img width="198px" src="/upload/certificate/bistra/012.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/011.jpg">
+				<img width="198px" src="/upload/certificate/bistra/011.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/010.jpg">
+				<img width="198px" src="/upload/certificate/bistra/010.jpg">
+			</a>
+		</li>
+		<li>
+			<a class="fancybox" rel="gallery1" href="/upload/certificate/bistra/016.jpg">
+				<img width="198px" src="/upload/certificate/bistra/016.jpg">
+			</a>
+		</li>
 	</ul>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php")?>

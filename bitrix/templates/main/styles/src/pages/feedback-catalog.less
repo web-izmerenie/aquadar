@@ -1,9 +1,8 @@
-// main: ../main.less
-
-.feedback-catalog{
+.feedback-catalog {
     margin-top: 55px;
-	margin-bottom: 20px;
-    .title{
+    margin-bottom: 20px;
+
+    .title {
         color: #55a0bc;
         font-family: pt_sans_bold;
         font-size: 26px;
@@ -12,28 +11,38 @@
         display: inline-block;
         line-height: 25px;
         margin-bottom: 35px;
+		&:hover{
+			color: #BF2267;
+			border-bottom: 1px solid #BF2267;
+		}
     }
-    ul{
+
+    ul {
         list-style: none;
-        li{
+
+        li {
             display: inline-block;
             width: 198px;
             vertical-align: top;
             margin-right: 50px;
-            &:last-child{margin: 0;}
-            a{
+
+            &:last-child { margin: 0; }
+
+            a {
                 line-height: normal;
                 color: #324141;
                 font-size: 18px;
                 font-family: pt_sans_bold;
                 text-decoration: none;
-                span{
-                    display: block;
+				&:hover{color: #BF2267;}
+
+                span { display: block; }
+
+                img {
+                    margin-bottom: 5px;
+                    border: none;
+                    width: 190px;
                 }
-				img{
-					margin-bottom: 5px;
-					border: none;
-				}
             }
         }
     }
