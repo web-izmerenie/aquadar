@@ -12,7 +12,15 @@ $APPLICATION->SetTitle("О компании");?>
 	</li>
 	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback3.jpg">
 		<img src="/upload/feedback/feedback3.jpg">
-		Глава Нижнекундрюченского сельского поселедния</a>
+		Администрация Нижнекундрюченского сельского поселения</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback4.jpg">
+		<img src="/upload/feedback/feedback4.jpg">
+		МБОУ Усть-Быстринской СОШ</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback5.jpg">
+		<img src="/upload/feedback/feedback5.jpg">
+		Ростовский кафедральный собор Рождества Пресвятой Богородицы</a>
 	</li>
 </ul>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

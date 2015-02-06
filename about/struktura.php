@@ -27,16 +27,18 @@ $APPLICATION->SetTitle("О компании");?>
 				<li>ТМ «Южный день»</li>
 			</ul>
 		</li>
-		<li>
-			<div class="img"><img src="/upload/structure-item3.jpg"></div>
-			<h3>ООО «Легион»</h3>
+		<li><a href="http://легион-фуд.рф/">
+				<div class="img"><img src="/upload/structure-item3.jpg"></div>
+				<h3>ООО «Легион»</h3>
+			</a>
 			<div class="text">Прямая доставка продукции ООО «Аквадар»
 				и ООО «Быстра» в магазины Ростова-на-Дону,<br> Аксая, Батайска, Новочеркасска и Таганрога.<br>
 	Официальный дистрибутор.</div>
 		</li>
-		<li>
-			<div class="img"><img src="/upload/structure-item4.jpg"></div>
-			<h3>ООО «Акватика»</h3>
+		<li><a href="http://serebryanaya161.ru/">
+				<div class="img"><img src="/upload/structure-item4.jpg"></div>
+				<h3>ООО «Акватика»</h3>
+			</a>
 			<div class="text">Доставка природной минеральной воды<br> «Серебряная» 19 л в офисы и квартиры<br> Ростова-на-Дону.<br>
 	Оптовые поставки по Ростовской области. </div>
 		</li>

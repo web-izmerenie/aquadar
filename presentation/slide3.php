@@ -9,9 +9,9 @@ $APPLICATION->SetTitle("Разливаем и упаковываем");?>
 	<section class="video">
 		<a class="play" href="#play"></a>
 		<video poster="/upload/present/video.jpg">
-			<source src="/upload/video/Rolik_Akvadar_New_01.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-			<source src="/upload/video/Rolik_Akvadar_New_01.webmsd.webm" type='video/webm; codecs="vp8, vorbis"'>
-			<source src="/upload/karier/video/video.ogg">
+			<source src="/upload/video/Rolik_Akvadar_New_01.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+			<source src="/upload/video/Rolik_Akvadar_New_01.webmsd.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+			<source src="/upload/karier/video/video.ogg" type='video/ogg; codecs="theora, vorbis"'>
 			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
 		</video>
 	</section>
