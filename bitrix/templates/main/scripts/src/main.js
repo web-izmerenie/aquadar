@@ -47,6 +47,12 @@ $(document).ready(function(){
 	}
 	
 	function formShow(linkActive, formActive){
+		if($(".ts-alert").length > 0) {
+			 	$(".ts-alert").each(function(){
+					$(this).parent().css({"opacity":"1"}).show();
+					$(".overlay").show();
+				});
+			}
 		$(linkActive).click( function(event){
 			event.preventDefault();
 			$('.overlay').fadeIn(400,
@@ -58,6 +64,7 @@ $(document).ready(function(){
 			event.preventDefault();
 			$(formActive).animate({opacity: 0, top: '45%'}, 200,
 				function(){
+					$(this).find('.ts-alert').remove();
 					$(this).css('display', 'none');
 					$('.overlay').fadeOut(400);
 				}

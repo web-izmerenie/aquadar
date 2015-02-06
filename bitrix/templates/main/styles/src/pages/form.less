@@ -1,5 +1,3 @@
-// main: ../main.less
-
 .formMixin(){
 	h3{
 		font-family: pt_sans_bold;
@@ -8,6 +6,18 @@
 		font-size: 30px;
 		line-height: normal;
 		padding-bottom: 21px;
+	}
+	.ts-alert{
+		margin-bottom: 10px;
+		line-height: 25px;
+		font-family: pt_sans_regular;
+	}
+	.ts-alert-danger{
+		color: #BF2267;
+	}
+	.ts-alert-success{
+		color: #FFF;
+		margin-bottom: 10px;
 	}
 	.close{
 		text-decoration: none;
@@ -25,9 +35,7 @@
 		padding: 10px 15px;
 		border: none;
 		margin-bottom: 10px;
-		&[type=number]{
-			width: 162px;
-		}
+
 		&[type=number]::-webkit-inner-spin-button,
 		&[type=number]::-webkit-outer-spin-button {
 			-webkit-appearance: none;
@@ -79,9 +87,9 @@
 	position: fixed;
 	background-color: #000;
 	opacity: 0.7;
-	width: 100%; 
+	width: 100%;
 	height: 100%;
-	top: 0; 
+	top: 0;
 	left: 0;
 	cursor: pointer;
 	display: none;
@@ -113,6 +121,9 @@
 	display: none;
 	opacity: 0;
 	.formMixin();
+	#input_id0{
+		width: 162px;
+	}
 }//form-call
 .distributor-form{
 	width: 524px;
@@ -149,7 +160,7 @@
 		width: 244px;
 		height: 163px;
 		position: absolute;
-		top: 79px;
+		bottom: 139px;
 		right: 28px;
 		border: none;
 		color: #324141;
