@@ -132,6 +132,18 @@ $(document).ready(function(){
 		});
 	}
 	
+	function ScrolHeader(){
+		window.onscroll = function(){
+			var scrolHead = $('html').scrollLeft();
+			scrolHead = -scrolHead;
+			$('.header').css({'width': 'auto',
+							 'margin-left': scrolHead});
+			if(scrolHead == 0){
+				$('.header').css({'width': '100%'})
+			}
+		}
+	}
+	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
 	accardionVacancies();
@@ -141,6 +153,7 @@ $(document).ready(function(){
 	topMenu();
 	$(window).resize(function() { imgSize(); });
 	playVideo();
+	ScrolHeader();
 	
 	//init Plugins
 	$('input, textarea').placeholder();
