@@ -136,11 +136,7 @@ $(document).ready(function(){
 		window.onscroll = function(){
 			var scrolHead = $('html').scrollLeft();
 			scrolHead = -scrolHead;
-			$('.header').css({'width': 'auto',
-							 'margin-left': scrolHead});
-			if(scrolHead == 0){
-				$('.header').css({'width': '100%'})
-			}
+			$('.header').css({'margin-left': scrolHead});
 		}
 	}
 	
