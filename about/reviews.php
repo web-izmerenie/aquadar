@@ -22,5 +22,29 @@ $APPLICATION->SetTitle("О компании");?>
 		<img src="/upload/feedback/feedback5.jpg">
 		Ростовский кафедральный собор Рождества Пресвятой Богородицы</a>
 	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback6.jpg">
+		<img src="/upload/feedback/feedback6.jpg">
+		Ростовский-на-Дону отдел Молодежной епархии</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback7.jpg">
+		<img src="/upload/feedback/feedback7.jpg">
+		Общество инвалидов Ворошиловского района г. Ростова-на-Дону</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback8.jpg">
+		<img src="/upload/feedback/feedback8.jpg">
+		Ростовско-Ленинская организация ВОЗ</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback9.jpg">
+		<img src="/upload/feedback/feedback9.jpg">
+		Детский лагерь «Николаевский»</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback10.jpg">
+		<img src="/upload/feedback/feedback10.jpg">
+		Сеть гипермаркетов «Лента»</a>
+	</li>
+	<li><a class="fancybox" rel="gallery1" href="/upload/feedback/feedback11.jpg">
+		<img src="/upload/feedback/feedback11.jpg">
+		Храм Казанской иконы Божией Матери</a>
+	</li>
 </ul>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

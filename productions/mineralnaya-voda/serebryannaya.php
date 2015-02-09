@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 			<li><img src="/upload/mineral_water/item1.jpg"><p>0,5 л</p></li>
 			<li><img src="/upload/mineral_water/item2.jpg"><p>1,5 л</p></li>
 			<li><img src="/upload/mineral_water/item3.jpg"><p>5 л</p></li>
-			<li><img src="/upload/mineral_water/item4.jpg"><p>19 л</p></li>
+			<li style="position: relative; top: 55px;"><img src="/upload/mineral_water/item4.jpg"><p>19 л</p><a href="http://serebryanaya161.ru/">Заказать доставку</a></li>
 		</ul>
 	</div>
 	<div class="category">
@@ -52,7 +52,7 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 				<li><span>Гидрокарбонаты HCO<sub>3</sub><sup>—</sup></span> <b>180-270</b></li>
 				<li><span>Хлориды Cl<sup>—</sup></span> <b>> 25,0</b></li>
 				<li><span>Сульфаты SO<sub>4</sub><sup>2—</sup></span> <b>> 50,0</b></li>
-				<li><span>Йод I<sup>—</sup></span> <b>0,08-0,2</b></li>
+				<li class="selected"><span>Йод I<sup>—</sup></span> <b>0,08-0,2</b></li>
 			</ul>
 		</div>
 		<div id="cations" class="elements">
@@ -61,7 +61,7 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 				<li><span>Кальций Ca<sup>2+</sup></span> <b>40-100</b></li>
 				<li><span>Натрий и калий Na<sup>+</sup>+K<sup>+</sup></span> <b>> 50,0</b></li>
 				<li><span>Магний Mg<sup>2+</sup></span> <b>> 10,0</b></li>
-				<li><span>Естественное содержание серебра Ag<sup>2+</sup></span> <b>0,025</b></li>
+				<li class="selected"><span>Естественное содержание серебра Ag<sup>2+</sup></span> <b>0,025</b></li>
 			</ul>
 		</div>
 	</div>
@@ -70,10 +70,8 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 
 		<div class="text">
 			<h3>1. Наша вода очищается без применения метода обратного осмоса</h3>
-			<p>Обратный осмос – процесс очистки воды, при котором воду пропускают через фильтры, задерживающие все растворенные в ней природные вещества и минералы.
-На выходе получают особо чистую, деминерализованную, практически стерилизованную воду. Такая вода никакой пользы человеческому организму
-не приносит.</p>
-<p>Именно поэтому в производстве минеральной природной воды «Серебряная» эта технология не используется. Мы сохраняем вещества и минералы в их естественном состоянии.</p></div>
+			<p>Обратный осмос&nbsp;&mdash; процесс очистки воды, при котором воду пропускают через фильтры, задерживающие все растворенные в&nbsp;ней природные вещества и&nbsp;минералы. Полученная дистиллированная вода вредна для человека. При регулярном потреблении она выводит их&nbsp;организма необходимые для нормального развития соли и&nbsp;микроэлементы. </p>
+<p>Мы&nbsp;заботимся о&nbsp;здоровье наших потребителей. Именно поэтому в&nbsp;производстве минеральной природной воды &laquo;Серебряная&raquo; эта технология не&nbsp;используется. Мы&nbsp;сохраняем вещества и&nbsp;минералы в&nbsp;их&nbsp;естественном состоянии.</p></div>
 		<img src="/upload/mineral_water/desc1.jpg">
 	</div>
 	<div class="desc-item">

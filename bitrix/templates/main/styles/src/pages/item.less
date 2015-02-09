@@ -7,7 +7,7 @@
             h1 {
                 font-size: 32px !important;
                 color: #55a0bc !important;
-                margin-top: 55px;
+                margin-top: 115px;
                 margin-bottom: 45px;
             }
 
@@ -36,9 +36,11 @@
                     .info_bottle {
                         position: absolute;
                         right: -145px;
-                        top: 224px;
+                        top: 298px;
                         width: 261px;
                         text-align: left;
+
+						img{margin:0;}
 
                         span {
                             border-bottom: 1px solid #d0d0d0;
@@ -131,6 +133,12 @@
                     list-style: none;
                     padding-left: 10px;
 
+                    .selected {
+                        background: #2387B1;
+                        color: #FFF;
+						padding: 0 2px;
+                    }
+
                     li {
                         font-size: 14px;
                         font-family: pt_sans_regular;
@@ -155,7 +163,7 @@
             }
 
             #anions ul li:nth-child(even) {
-                width: 200px;
+                width: auto;
 
                 span { width: 95px; }
             }
@@ -230,6 +238,26 @@
                 margin-top: 0;
 
                 &:last-child { padding: 0; }
+
+				a{
+					display: block;
+					color: #324141;
+					font-size: 18px;
+					font-family: pt_sans_bold;
+					text-decoration: none;
+					background-image: -ms-linear-gradient(top, #FFE717 0%, #FFCB08 100%);
+					background-image: -moz-linear-gradient(top, #FFE717 0%, #FFCB08 100%);
+					background-image: -o-linear-gradient(top, #FFE717 0%, #FFCB08 100%);
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFE717), color-stop(1, #FFCB08));
+					background-image: -webkit-linear-gradient(top, #FFE717 0%, #FFCB08 100%);
+					background-image: linear-gradient(to bottom, #FFE717 0%, #FFCB08 100%);
+					width: 150px;
+					height: 38px;
+					margin: 12px auto 0;
+					line-height: 38px;
+					padding: 0 5px;
+					border-radius: 8px;
+				}
             }
 
             &:first-child {
