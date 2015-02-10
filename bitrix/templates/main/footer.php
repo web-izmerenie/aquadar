@@ -106,4 +106,5 @@
 			</section>
 		</footer><!-- .footer -->
 	</body>
+<?require($_SERVER["DOCUMENT_ROOT"]."/seo.php");?>
 </html>
