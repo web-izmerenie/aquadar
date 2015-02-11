@@ -140,8 +140,24 @@ $(document).ready(function(){
 		}
 	}
 	
+	function honorsShow(){
+		var $mainBlock = $('.honors_prewiev');
+
+		$mainBlock.each(function(){
+			var $showLink = $(this).find('.show_more a');
+			var $item = $(this).find('ul li:hidden');
+
+			$showLink.click(function(event){
+				event.preventDefault();
+				$item.slideDown().css({'display':'inline-block'});
+				$(this).hide();
+			});
+		});
+	}
+	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
+	honorsShow();
 	accardionVacancies();
 	banLinks();
 	formShow('.distributor a', '.distributor-form');

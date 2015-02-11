@@ -1,29 +1,29 @@
-.honorsMixin() {
-    h1 {
-        color: #55a0bc !important;
-        font-size: 32px !important;
-        padding-bottom: 28px;
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-            display: inline-block;
-            margin-left: 50px;
-
-            &:first-child { margin: 0; }
-
-            a img { border: none; }
-        }
-    }
-}
-
 .honors {
     .inside-content {
         .honors_prewiev {
             margin-bottom: 40px;
-            .honorsMixin();
+
+            h1 {
+                color: #55a0bc !important;
+                font-size: 32px !important;
+                padding-bottom: 28px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+					width: 235px;
+					text-align: center;
+					margin-bottom: 40px;
+					display: none;
+					&:nth-child(-n+4){
+						display: inline-block;
+					}
+
+                    a img { border: none; }
+                }
+            }
 
             .show_more {
                 text-align: center;
@@ -43,18 +43,7 @@
                 }
             }
         }
-
         //honors_prewiev
-        .more_honors {
-            .honorsMixin();
-
-            ul li {
-                &:nth-child(4n + 1) { margin-left: 0; }
-
-                margin-bottom: 50px;
-            }
-        }
-        //more_honors
     }
     //inside-content
 }

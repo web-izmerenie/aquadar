@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Награды и сертификаты", 
-		"/about/honors/", 
+		"/about/honors.php", 
 		Array(), 
 		Array(), 
 		"" 
