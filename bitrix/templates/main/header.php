@@ -106,7 +106,7 @@ $tplPath = "/bitrix/templates/main/";
 			<main class="content">
 			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
 			<section id="<?=$main_classes;?>" class="inside-content">
-				<h1><?$APPLICATION->ShowTitle(false)?></h1>
+				<?if(!defined("ERROR_404")){?><h1><?$APPLICATION->ShowTitle(false)?></h1><?}?>
 				<?if(!defined("NO_INSIDE_MENU")){?>
 					<?$APPLICATION->IncludeComponent(
 							"bitrix:menu",
