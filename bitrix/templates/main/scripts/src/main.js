@@ -85,6 +85,10 @@ $(document).ready(function(){
 						   'padding-right': differenseWidth
 						  });
 		});
+		
+		$('.desc-item:odd').each(function(){
+			$(this).find('img').prependTo(this);
+		});
 	}
 	
 	function positionContentFromContacts(){
