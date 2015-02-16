@@ -51,6 +51,9 @@ $(document).ready(function(){
 			 	$(".ts-alert").each(function(){
 					$(this).parent().css({"opacity":"1"}).show();
 					$(".overlay").show();
+					if($(".ts-alert-success").length > 0) {
+						$(this).parent().find("form").fadeOut().slideUp();
+					}
 				});
 			}
 		$(linkActive).click( function(event){
