@@ -1,8 +1,7 @@
 <?define("MINERAL_WATER_ITEMS", "Y");
 define("NO_INSIDE_MENU", "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Минеральная вода");?>
-<?$APPLICATION->IncludeComponent(
+$APPLICATION->SetTitle("Минеральная вода");?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
 	"catalog_inside_menu",
 	Array(
@@ -12,12 +11,12 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 		"SECTION_CODE" => "",
 		"COUNT_ELEMENTS" => "N",
 		"TOP_DEPTH" => "1",
-		"SECTION_FIELDS" => array(0=>"",1=>"",),
-		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SECTION_FIELDS" => array("",""),
+		"SECTION_USER_FIELDS" => array("",""),
 		"VIEW_MODE" => "LINE",
 		"SHOW_PARENT_NAME" => "Y",
 		"SECTION_URL" => "",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N"
@@ -67,11 +66,10 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 		)
 	);
 }?>
-
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"feedback_catalog",
-	array(
+	Array(
 		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "17",
 		"NEWS_COUNT" => "4",
@@ -80,14 +78,8 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",
 		"FILTER_NAME" => "",
-		"FIELD_CODE" => array(
-			0 => "DETAIL_PICTURE",
-			1 => "",
-		),
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"FIELD_CODE" => array(0=>"DETAIL_PICTURE",1=>"",),
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"AJAX_MODE" => "N",
@@ -124,7 +116,7 @@ $APPLICATION->SetTitle("Минеральная вода");?>
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"AJAX_OPTION_ADDITIONAL" => ""
-	),
-	false
+	)
 );?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/inc/inc_distributor.php");?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

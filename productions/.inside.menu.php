@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Сокосодержащие напитки", 
-		"/productions/sokosoderzhashchie-napitki/", 
+		"/productions/sokosoderzhashchie-napitki/tm-yuzhnyy-den/", 
 		Array(), 
 		Array(), 
 		"" 

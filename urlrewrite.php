@@ -1,6 +1,12 @@
 <?
 $arUrlRewrite = array(
 	array(
+		"CONDITION" => "#^/productions/sokosoderzhashchie-napitki/(.+?)/(\\?.*\$|\$)#",
+		"RULE" => "&SECTION_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/productions/sokosoderzhashchie-napitki/elements_list.php",
+	),
+	array(
 		"CONDITION" => "#^/productions/mineralnaya-voda/(.+?)/(\\?.*\$|\$)#",
 		"RULE" => "&SECTION_CODE=\$1",
 		"ID" => "",
@@ -13,6 +19,12 @@ $arUrlRewrite = array(
 		"ID" => "",
 		"PATH" => "/about/publication/detail.php",
 		"SORT" => "100",
+	),
+	array(
+		"CONDITION" => "#^/productions/limonady/(.+?)/(\\?.*\$|\$)#",
+		"RULE" => "&SECTION_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/productions/limonady/elements_list.php",
 	),
 	array(
 		"CONDITION" => "#^/about/novosti/(.*?).html(\\?.*\$|\$)#",

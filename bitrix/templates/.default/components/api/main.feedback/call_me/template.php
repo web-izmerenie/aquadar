@@ -60,7 +60,7 @@ $tpl_class_name = 'tpl_default';?>
 			}
 			?>
 		<? endif; ?>
-		<p>Все поля обязательны для заполне
+		<p>Все поля обязательны для заполнения</p>
 		<input type="submit" name="submit" value="<?=$arResult['FORM_SUBMIT_VALUE'];?>">
 		<span>Мы свяжемся с вами в течение 15 минут</span>
 	</form>

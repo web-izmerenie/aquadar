@@ -19,7 +19,6 @@
 @import 'pages/distribution.less';
 @import 'pages/presentation.less';
 @import 'pages/404.less';
-
 //paths
 @tplPath: '/bitrix/templates/main/';
 @imgPrefix: '@{tplPath}images/';
@@ -227,6 +226,8 @@ html {
                             &:nth-child(2) { margin: 0px 4% 0px -3%; }
 
                             img { border: none; }
+
+                            &:first-child .circle-description { margin-left: -5%; }
 
                             .circle-description {
                                 display: none;
