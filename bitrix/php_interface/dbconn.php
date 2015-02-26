@@ -6,7 +6,7 @@ $DBHost = $DB_CFG_HOST;
 $DBLogin = $DB_CFG_USER;
 $DBPassword = $DB_CFG_PASS;
 $DBName = $DB_CFG_NAME;
-$DBName = "aquadar";
+$DBName = "akvadar";
 $DBDebug = false;
 $DBDebugToFile = false;
 

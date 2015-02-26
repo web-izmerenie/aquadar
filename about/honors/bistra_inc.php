@@ -45,4 +45,4 @@
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N"
 	)
-);?><br>
+);?>
