@@ -68,6 +68,7 @@ $tplPath = "/bitrix/templates/main/";
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.placeholder.min.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.autocolumnlist.js"></script>
 	</head>
 
 	<body>
