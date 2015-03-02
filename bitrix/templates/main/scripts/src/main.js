@@ -184,7 +184,7 @@ $(document).ready(function(){
 				}
 			}
 	});
-	$(".desc-map ul").autocolumnlist({
+	$(".desc-map > ul").autocolumnlist({
 		columns: 3,
 		classname: 'col',
 		min: 7
