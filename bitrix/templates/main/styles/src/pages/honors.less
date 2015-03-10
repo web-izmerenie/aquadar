@@ -13,15 +13,23 @@
                 list-style: none;
 
                 li {
-					width: 235px;
-					text-align: center;
-					margin-bottom: 40px;
-					display: none;
-					&:nth-child(-n+4){
-						display: inline-block;
-					}
+                    width: 235px;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    display: none;
 
-                    a img { border: none; }
+                    &:nth-child(-n+4) { display: inline-block; }
+
+                    a {
+                        text-decoration: none;
+
+                        img { border: none; }
+
+                        p {
+							font-family: pt_sans_bold;
+							font-size: 17px;
+						}
+                    }
                 }
             }
 
