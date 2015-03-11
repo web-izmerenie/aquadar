@@ -6,6 +6,22 @@
 	<div class="prewiev-text"><?=$arResult['PREVIEW_TEXT'];?></div>
 	<div class="text"><?=$arResult['DETAIL_TEXT'];?></div>
 </section>
+<section class="photogalery">
+		<ul>
+			<?foreach($arResult['MORE_PHOTO'] as $photo){
+				$smallPhoto = CFile::ResizeImageGet($photo,
+													array('width'=>200, 'height'=>130),
+													BX_RESIZE_IMAGE_EXACT, true);
+				$bigPhoto = CFile::ResizeImageGet($photo,
+													array('width'=>1024, 'height'=>768),
+													BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+
+				<li><a class="fancybox" rel="gallery1" href="<?=$bigPhoto['src'];?>"><img width="<?=$smallPhoto['width'];?>"
+													   height="<?=$smallPhoto['height'];?>"
+													   src="<?=$smallPhoto['src'];?>"></a></li>
+			<?}?>
+		</ul>
+	</section>
 <section class="next-news">
 	<ul>
 		<?if(is_array($arResult["TOLEFT"])):?>
@@ -18,5 +34,3 @@
 
 	</ul>
 </section>
-
-

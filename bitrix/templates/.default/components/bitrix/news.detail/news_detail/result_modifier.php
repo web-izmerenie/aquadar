@@ -41,3 +41,19 @@ elseif(count($arItems)==2):
 	else
 		$arResult["TOLEFT"] = Array("NAME"=>$arItems[1]["NAME"], "URL"=>$arItems[1]["DETAIL_PAGE_URL"], "PICTURE"=>CFile::GetPath($arItems[1]["PREVIEW_PICTURE"]));
 endif;
+
+$arResult["MORE_PHOTO"] = array();
+
+if(isset($arResult["PROPERTIES"]["ATT_PHOTO"]["VALUE"]) && is_array($arResult["PROPERTIES"]["ATT_PHOTO"]["VALUE"]))
+{
+
+	foreach($arResult["PROPERTIES"]["ATT_PHOTO"]["VALUE"] as $FILE)
+	{
+
+		$FILE = CFile::GetFileArray($FILE);
+
+		if(is_array($FILE))
+			$arResult["MORE_PHOTO"][]=$FILE;
+
+	}
+}
