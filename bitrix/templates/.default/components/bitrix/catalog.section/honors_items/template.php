@@ -6,7 +6,7 @@
 		<li>
 			<a class="fancybox" rel="gallery1" href="<?=$arItem['DETAIL_PICTURE']['SRC'];?>">
 				<img src="<?=$arItem['PREVIEW_PICTURE']['SRC'];?>">
-				<p><?=$arItem["NAME"];?></p>
+				<!--<p>$arItem["NAME"];</p>-->
 			</a>
 	</li>
 	<?}

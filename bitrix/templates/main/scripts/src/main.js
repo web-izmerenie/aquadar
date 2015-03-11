@@ -162,6 +162,12 @@ $(document).ready(function(){
 		});
 	}
 	
+	function RekvesitToggle(){
+		$('.rekvesits a[href="#rekvesits"]').click(function(){
+			$('.rekvesits .hide-info').slideToggle();
+		});
+	}
+	
 	//init Function
 	window.onload=function(){imgCatalogPosition(); circleShow();imgSize();positionContentFromContacts();};
 	honorsShow();
@@ -173,6 +179,7 @@ $(document).ready(function(){
 	$(window).resize(function() { imgSize(); });
 	playVideo();
 	ScrolHeader();
+	RekvesitToggle();
 	
 	//init Plugins
 	$('input, textarea').placeholder();
