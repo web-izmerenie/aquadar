@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);?>
-<h2>Холдинг «Аквадар»</h2>
+<h2>Группа компаний «Аквадар»</h2>
 <ul id="holding">
 <?foreach($arResult["ITEMS"] as $arItem):?>
 
