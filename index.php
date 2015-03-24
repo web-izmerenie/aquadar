@@ -1,5 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("tags", "Теги");
+$APPLICATION->SetPageProperty("keywords_inner", "Продвигаемы слова");
+$APPLICATION->SetPageProperty("keywords", "Ключевые слова");
+$APPLICATION->SetPageProperty("description", "Описание страницы");
 $APPLICATION->SetTitle("Аквадар");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",

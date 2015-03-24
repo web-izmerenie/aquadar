@@ -61,7 +61,11 @@ $tplPath = "/bitrix/templates/main/";
 		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<!--[if gte IE 9]><link href="<?=$tplPath?>styles/src/ie9.css" rel="stylesheet"><![endif]-->
 		<title><?$APPLICATION->ShowTitle()?></title>
-		 <?$APPLICATION->ShowHead()?>
+		<?$APPLICATION->ShowMeta("description")?>
+		<?$APPLICATION->ShowMeta("keywords")?>
+		<?if($USER->IsAuthorized()){?>
+			<?$APPLICATION->ShowHead()?>
+		<?}?>
 		<link href="<?=$tplPath?>styles/build/build.css" rel="stylesheet">
         <script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="<?=$tplPath?>scripts/src/main.js"></script>

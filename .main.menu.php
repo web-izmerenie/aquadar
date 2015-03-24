@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"/kontakty.php", 
+		"/kontakty/", 
 		Array(), 
 		Array(), 
 		"" 
