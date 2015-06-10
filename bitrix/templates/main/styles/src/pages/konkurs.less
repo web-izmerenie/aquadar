@@ -1,0 +1,202 @@
+@import '../main.less';
+
+.konkurs{
+	
+	.button-download{
+		text-decoration: none;
+		background: #FFDC08;
+		border-radius: 12px;
+		font-size: 16px;
+		font-family: pt_sans_regular;
+		padding: 9px 25px;
+		
+		&:hover{
+			background: #BF2267;
+			color: #FFF;
+		}
+	}
+	
+	.inside-content{
+		position: relative;
+		margin-top: -14px !important;
+		z-index: 1;
+		
+		.button-download{
+			right: 29px;
+			top: 22px;
+			position: absolute;
+		}//button-download
+		
+		#banner{
+			margin-top: -30px;
+			width: 100%;
+		}//banner
+		
+	}//inside-content
+	
+	#active{
+		background: #46c8f2;
+		top: -31px;
+		position: relative;
+		
+		ul{
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			padding: 47px 0 55px;
+			list-style: none;
+			
+			li{
+				width: 254px;
+				text-align: center;
+				color: #FFF;
+				font-size: 18px;
+				font-family: pt_sans_regular;
+				line-height: 1.5;
+				
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+				
+				h1{
+					padding: 13px 0;
+					font-size: 24px;
+					font-family: pt_sans_bold;
+				}
+				
+			}
+			
+		}
+		
+		.arrow{position: absolute;}
+		
+		#first{
+			bottom: 253px;
+			left: 227px;
+		}
+		
+		#second{
+			right: 224px;
+			top: 41px;
+		}
+	}//active
+	
+	.inner{
+		margin: 0 auto;
+		position: relative;
+		width: 980px;
+	}//inner
+	
+	#condition{
+		position: relative;
+		top: -56px;
+		background: #32a1e0;
+		text-align: center;
+		color: #FFF;
+		font: 400 18px pt_sans_regular;
+		
+		#top-wrap{
+			background: url("@{imgPrefix}concurs-top.png") repeat-x 20px 0;
+			height: 120px;
+			position: relative;
+			top: -14px;
+		}
+		
+		#bottom-wrap{
+			background: url("@{imgPrefix}concurs-bottom.png") repeat-x 63px -164px;
+			position: absolute;
+			width: 100%;
+			height: 180px;
+			bottom: -69px;
+			z-index: 0;
+		}
+		
+		.inner{
+			top: -36px;
+			z-index: 1;
+			
+			.condition-link{
+				font-family: pt_sans_bold;
+				text-decoration: none;
+				color: #ffffff;
+				font-size: 58px;
+				
+				&:hover{
+					span{opacity: 0;}
+				}
+
+				span{
+					border-bottom: 2px dashed #FFF;
+					display: block;
+					width: 456px;
+					margin: -9px auto 0;
+				}
+
+			}
+
+			p{margin: 41px 0 12px;}
+
+			& > ul{
+				list-style: none;
+
+				li{
+					margin-bottom: 4px;
+
+					&:before{
+						content: ' \25CF';
+						font-size: 35px;
+						color: #46c8f2;
+						margin-right: 10px;
+					}
+
+					a{
+						color: #ffffff;
+						font: 400 24px pt_sans_bold;
+						
+						&:hover{text-decoration: none;}
+					}
+
+					&:nth-child(2):before{color: #1a44cf;}
+
+					&:last-child:before{color: #ff7c15;}
+				}
+			}
+			
+			.text{
+				width: 800px;
+				margin: 24px auto 0px;
+				line-height: 23px;
+				text-align: left;
+				display: none;
+				
+				p{margin: 0 0 25px;}
+				
+				ul{
+					margin: 34px 0px 38px;
+					list-style: none;
+					padding-left: 20px;
+					
+					li{
+						margin-bottom: 10px;
+						
+						&:before{
+							content: '— '
+						}
+					}
+				}
+				
+				.button-download{
+					margin: 0 auto 85px;
+					display: block;
+					width: 185px;
+					padding: 9px 21px;
+					position: relative;
+					top: 25px;
+					left: -7px;
+					border-radius: 7px;
+				}
+			}//text
+		}//inner
+	}//condition
+}//konkurs

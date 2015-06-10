@@ -49,6 +49,9 @@ if(defined("LIMONADE"))
 if(defined("JUICE"))
 	$main_classes[] = "juice";
 
+if(defined("KONKURS"))
+	$html_classes[] = "konkurs";
+
 $html_classes = implode(" ", $html_classes);
 $main_classes = implode(" ", $main_classes);
 
@@ -69,6 +72,7 @@ $tplPath = "/bitrix/templates/main/";
 		<link href="<?=$tplPath?>styles/build/build.css" rel="stylesheet">
         <script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="<?=$tplPath?>scripts/src/main.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/src/concurs.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.placeholder.min.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.fancybox.pack.js"></script>
@@ -110,8 +114,10 @@ $tplPath = "/bitrix/templates/main/";
 
 			<main class="content">
 			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
-			<section id="<?=$main_classes;?>" class="inside-content">
-				<?if(!defined("ERROR_404")){?><h1><?$APPLICATION->ShowTitle(false)?></h1><?}?>
+				<?if(!defined('FULL_WIDTH')){?>
+					<section id="<?=$main_classes;?>" class="inside-content">
+					<?if(!defined("ERROR_404")){?><h1><?$APPLICATION->ShowTitle(false)?></h1><?}?>
+				<?}?>
 				<?if(!defined("NO_INSIDE_MENU")){?>
 					<?$APPLICATION->IncludeComponent(
 							"bitrix:menu",

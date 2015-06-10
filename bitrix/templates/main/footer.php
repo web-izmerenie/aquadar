@@ -1,5 +1,7 @@
 			<?if($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"){?>
-				</section>
+				<?if(!defined('FULL_WIDTH')){?>
+					</section>
+				<?}?>
 				<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
 				"AREA_FILE_SHOW" => "page",
 				"AREA_FILE_SUFFIX" => "inc",
