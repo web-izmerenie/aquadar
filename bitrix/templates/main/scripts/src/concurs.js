@@ -4,9 +4,11 @@ $(function(){
 		var text = $('.text');
 		
 		link.click(function(e){
+			
 			e.preventDefault();
 			
 			text.slideDown();
+			
 		});
 	}
 	
