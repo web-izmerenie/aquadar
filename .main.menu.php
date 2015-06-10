@@ -30,7 +30,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"/kontakty/", 
+		"/kontakty.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Фотоконкурс", 
+		"/about/novosti/fotokonkurs-otdykhaem-v-rodnom-krae-vmeste-s-vodoy-serebryanaya.html", 
 		Array(), 
 		Array(), 
 		"" 

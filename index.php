@@ -5,7 +5,13 @@ $APPLICATION->SetPageProperty("keywords_inner", "Продвигаемы слов
 $APPLICATION->SetPageProperty("keywords", "Ключевые слова");
 $APPLICATION->SetPageProperty("description", "Описание страницы");
 $APPLICATION->SetTitle("Аквадар");
-?><?$APPLICATION->IncludeComponent(
+?>
+<?if($_SERVER["HTTP_HOST"] == "ust-bistra.ru" || $_SERVER["HTTP_HOST"] == "www.ust-bistra.ru"){
+	header("HTTP/1.1 301 Moved Permanently");
+	header("Location: ./productions/mineralnaya-voda/");
+	exit(); 
+}?>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"main_page_top",
 	Array(

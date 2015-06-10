@@ -29,7 +29,7 @@ $this->setFrameMode(true);
 	
 	print $arResult['PROPERTIES']['text_stavrapol']['~VALUE']['TEXT'];
 	
-}elseif($_SERVER['HTTP_HOST'] == 'stavropol.akvadar.ru'){
+}elseif($_SERVER['HTTP_HOST'] == 'samara.akvadar.ru'){
 	print $arResult['PROPERTIES']['text_samara']['~VALUE']['TEXT'];
 	
 }else{

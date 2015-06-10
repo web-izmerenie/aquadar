@@ -132,6 +132,7 @@
         </script>
         <noscript><div><img src="//mc.yandex.ru/watch/29125650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
-	</body>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/seo.php");?>
+</body>
 </html>

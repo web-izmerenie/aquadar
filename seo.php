@@ -31,4 +31,9 @@ function urlSite(){
 
 ?>
 
-<div style="display:none"><p><?=randomLetter();?> <?=site();?> <?=currentDate();?> <?=urlSite();?>.</p></div>
+<div style="display:none"><p><?=randomLetter();?> <?=site();?> <?=currentDate();?> <?=urlSite();?>.</p>
+<a href="/zavod-napitkov.php"></a>Завод<br/>
+<a href="/proizvoditeli-napitkov.php">Производитель</a><br/>
+<a href="/proizvodstvo-limonada.php"></a>Производство<br/>
+
+</div>

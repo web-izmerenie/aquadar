@@ -1,8 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Страница 1");
-$APPLICATION->SetPageProperty("keywords", "Ключевые слова");
-$APPLICATION->SetPageProperty("description", "Описание");
-$APPLICATION->SetTitle("page1");?><?$APPLICATION->IncludeComponent(
+$APPLICATION->SetPageProperty("title", "Производители безалкогольных газированных наптков в Россиии. Поставки минеральной и питьевой воды оптом в Росиии");
+$APPLICATION->SetTitle("page1");?>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail", 
 	"SEO_detail", 
 	array(
@@ -28,7 +27,7 @@ $APPLICATION->SetTitle("page1");?><?$APPLICATION->IncludeComponent(
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "Y",
 		"SET_TITLE" => "Y",

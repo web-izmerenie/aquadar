@@ -1,7 +1,8 @@
 <?define("LIMONADE", "Y");
 define("NO_INSIDE_MENU", "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Лимонады");?><?$APPLICATION->IncludeComponent(
+$APPLICATION->SetPageProperty("title", "Лимонад в ростове");
+$APPLICATION->SetTitle("Лимонад ");?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
 	"catalog_inside_menu",
 	Array(
