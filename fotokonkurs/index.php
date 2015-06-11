@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Фотоконкурс");?>
 <div class="inside-content">
 	<h1>Фотоконкурс</h1>
-<!--	<a class="button-download" href="#">Скачать условия конкурса</a>-->
+	<a class="button-download" href="/upload/pravila.doc">Скачать условия конкурса</a>
 	<img id="banner" src="upload/konkurs.png">
 </div>
 <div id="active">
@@ -51,7 +51,8 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 			<p>Помимо условий, приведенных выше, при подведении итогов акции также будет учитываться привлекательность и&nbsp;оригинальность вашей фотографии: насколько живописными получатся виды природы, архитектурные и&nbsp;исторические памятники и&nbsp;другие места вашего отдыха, а&nbsp;также насколько интересно и&nbsp;красиво авторам удастся представить бутылку с&nbsp;минеральной водой &laquo;Серебряная&raquo;.</p>
 			<p>Ограничения по возрасту – 18+.</p>
 			<p>Организатор – ООО «Быстра».</p>
-<!--			<a class="button-download" href="#">Скачать условия конкурса</a>-->
+			<p>Подробные условия участия в&nbsp;конкурсе &laquo;Отдыхаем в&nbsp;родном крае вместе с&nbsp;минеральной водой &laquo;Серебрянная&raquo; можно скачать здесь:</p>
+			<a class="button-download" href="/upload/pravila.doc">Скачать условия конкурса</a>
 		</div>
 		<p>Группы для размещения фотографий:</p>
 		<ul>
@@ -62,7 +63,7 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 	</div>
 	<div id="bottom-wrap"></div>
 </div>
-<section id="table-winners">
+<!--<section id="table-winners">
 	<div id="winers-week">
 		<h1>Победители недели</h1>
 		<p>(22-28 июня)</p>
@@ -94,55 +95,28 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 			
 		</ul>
 	</div>
-	<div id="ofer-winners">
-		<h1>Победители других этапов:</h1>
-		<div class="steps">
-			<ul>
-				<li>
-					<p>1-ый этап</p>
-					<span>(15 июня-12 июля)</span>
-				</li>
-				<li><a href="#">15.06-21.06</a></li>
-				<li><a class="active" href="#">22.06-28.06</a></li>
-				<li><a href="#">29.06-5.07</a></li>
-				<li><a href="#">6-12.07</a></li>
-				<li><a href="#">13-19.07</a></li>
-				<li><a href="#">Итоги 1-ого этапа</a></li>
-				
-			</ul>
-		</div>
-		<div class="steps">
-			<ul>
-				<li>
-					<p>1-ый этап</p>
-					<span>(15 июня-12 июля)</span>
-				</li>
-				<li><a href="#">15.06-21.06</a></li>
-				<li><a class="active" href="#">22.06-28.06</a></li>
-				<li><a href="#">29.06-5.07</a></li>
-				<li><a href="#">6-12.07</a></li>
-				<li><a href="#">13-19.07</a></li>
-				<li><a href="#">Итоги 1-ого этапа</a></li>
-				
-			</ul>
-		</div>
-		<div class="steps">
-			<ul>
-				<li>
-					<p>1-ый этап</p>
-					<span>(15 июня-12 июля)</span>
-				</li>
-				<li><a href="#">15.06-21.06</a></li>
-				<li><a class="active" href="#">22.06-28.06</a></li>
-				<li><a href="#">29.06-5.07</a></li>
-				<li><a href="#">6-12.07</a></li>
-				<li><a href="#">13-19.07</a></li>
-				<li><a href="#">Итоги 1-ого этапа</a></li>
-				
-			</ul>
-		</div>
-		<a class="button-download" href="#">Победители конкурса</a>
-	</div>
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:catalog.section.list",
+			"concurs_table",
+			Array(
+				"COMPONENT_TEMPLATE" => ".default",
+				"IBLOCK_TYPE" => "content",
+				"IBLOCK_ID" => "25",
+				"SECTION_ID" => "",
+				"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
+				"COUNT_ELEMENTS" => "N",
+				"TOP_DEPTH" => "2",
+				"SECTION_FIELDS" => array("", ""),
+				"SECTION_USER_FIELDS" => array("", ""),
+				"VIEW_MODE" => "LINE",
+				"SHOW_PARENT_NAME" => "Y",
+				"SECTION_URL" => "",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_GROUPS" => "Y",
+				"ADD_SECTIONS_CHAIN" => "N"
+			)
+		);?>
 </section>
 <section id="video-wrap">
 	<div class="top"></div>
@@ -154,5 +128,5 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
 		</video>
 	</section>
-</section>
+</section>-->
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
