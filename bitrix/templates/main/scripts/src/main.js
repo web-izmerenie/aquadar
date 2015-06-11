@@ -131,11 +131,11 @@ $(document).ready(function(){
 				)
 				return false;
 			});
-			video.on("ended", function (){
+			/*video.on("ended", function (){
 				this.src = this.src;
 				$(this).removeAttr('controls');
 				vb.find('.play').show();
-			});
+			});*/
 		});
 	}
 	

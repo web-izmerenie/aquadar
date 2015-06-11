@@ -53,7 +53,7 @@ $APPLICATION->SetTitle("Разливаем и упаковываем");?>
 		<video poster="/upload/present/video.jpg" controls="controls">
 			<source src="/upload/video/Rolik_Akvadar_New_01.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
 			<source src="/upload/video/Rolik_Akvadar_New_01.webmsd.webm" type='video/webm; codecs="vp8.0, vorbis"'>
-			<source src="/upload/karier/video/video.ogg" type='video/ogg; codecs="theora, vorbis"'>
+			<source src="/upload/video/Rolik_Akvadar_New_01.ogg" type='video/ogg; codecs="theora, vorbis"'>
 			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
 		</video>
 	</section>

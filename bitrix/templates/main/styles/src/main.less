@@ -468,7 +468,33 @@ html {
                         font-family: pt_sans_bold;
                         font-weight: normal;
                     }
+					
                 }
+				
+				.video {
+					position: relative;
+					width: 954px;
+					height: 537px;
+
+					video {
+						width: 954px;
+						height: 537px;
+					}
+
+					.play {
+						display: block;
+						background: url('@{imgPrefix}control.png') no-repeat;
+						width: 168px;
+						height: 168px;
+						position: absolute;
+						left: 0;
+						top: 0;
+						z-index: 1;
+						bottom: 0;
+						right: 0;
+						margin: auto;
+					}
+				}
 
                 //inside-content
                 .bottom-block {

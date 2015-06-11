@@ -41,7 +41,7 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 			<p>Победителей ждем множество ценных призов, среди которых планшетные&nbsp;ПК, ноутбуки, а&nbsp;также суперприз&nbsp;&mdash; ЖК-телевизор.</p>
 			<p>Для того, чтобы принять участие в&nbsp;конкурсе:</p>
 			<p>Сделайте фотографию на&nbsp;отдыхе. На&nbsp;этом фото&nbsp;вы, ваши друзья или родственники должны быть запечатлены в&nbsp;момент отдыха или культурного времяпрепровождения (на&nbsp;рыбалке, на&nbsp;пляже, на&nbsp;пикнике, на&nbsp;туристической экскурсии, на&nbsp;стадионе и&nbsp;т.&nbsp;д.). Обязательное условие&nbsp;&mdash; присутствие в&nbsp;кадре бутылки минеральной воды &laquo;Серебряная&raquo; любого объема: 0,5, 1,5 и&nbsp;5&nbsp;литров. Этикетка минеральной воды &laquo;Серебряная&raquo; на&nbsp;снимке должна быть четко читаемой и&nbsp;легко узнаваемой. Изображение бутылок и&nbsp;этикеток для идентификации можно найти в&nbsp;каталоге продукции.</p>
-			<p>Разметите фотографию в&nbsp;группе &laquo;Отдыхаем в&nbsp;родном крае вместе с&nbsp;минеральной водой &laquo;Серебряная&raquo; в&nbsp;одной из&nbsp;социальной сети (&laquo;Фейсбук&raquo;, &laquo;ВКонтакте&raquo;).</p>
+			<p>Разметите фотографию в&nbsp;группе &laquo;Отдыхаем в&nbsp;родном крае вместе с&nbsp;минеральной водой &laquo;Серебряная&raquo; в&nbsp;одной из&nbsp;социальной сети (&laquo;Фейсбук&raquo;, &laquo;ВКонтакте&raquo;, &laquo;Одноклассники&raquo;).</p>
 			<p>Участники группы будут помечать &laquo;лайками&raquo; выложенные фото: количество этих &laquo;лайков&raquo; будет учитываться специальной комиссией, созданной организатором мероприятия ООО &laquo;Быстра&raquo; при определении победителей:</p>
 			<ul>
 				<li>лиц, занявших первое, второе и третье место,</li>
@@ -57,8 +57,102 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 		<ul>
 			<li><a href="https://vk.com/aqua_silver">https://vk.com/aqua_silver</a></li>
 			<li><a href="https://www.facebook.com/aquasilverrnd">https://www.facebook.com/aquasilverrnd</a></li>
+			<li><a href="http://ok.ru/group/52325079908511">http://ok.ru/group/52325079908511</a></li>
 		</ul>
 	</div>
 	<div id="bottom-wrap"></div>
 </div>
+<section id="table-winners">
+	<div id="winers-week">
+		<h1>Победители недели</h1>
+		<p>(22-28 июня)</p>
+		<ul>
+			<li>
+				<a class="fancybox" rel="gallery" href="upload/one-winner.png">
+					<img src="upload/one-winner.png">
+				</a>	
+				<span class="name">Маша Зайцева</span>
+				<span class="city">(Ростов-на-Дону)</span>
+				<span class="win-logo"></span>
+			</li>
+			<li>
+				<a class="fancybox" rel="gallery" href="upload/two-winner.png">
+					<img src="upload/two-winner.png">
+				</a>
+				<span class="name">Алина и Аниса Кабаевы</span>
+				<span class="city">(Нижний Камск)</span>
+				<span class="win-logo"></span>
+			</li>
+			<li>
+				<a class="fancybox" rel="gallery" href="upload/three-winner.png">
+					<img src="upload/three-winner.png">
+				</a>	
+				<span class="name">Елена Бережная и Николай Цискаридце</span>
+				<span class="city">(Комсомольск-на-Амуре)</span>
+				<span class="win-logo"></span>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="ofer-winners">
+		<h1>Победители других этапов:</h1>
+		<div class="steps">
+			<ul>
+				<li>
+					<p>1-ый этап</p>
+					<span>(15 июня-12 июля)</span>
+				</li>
+				<li><a href="#">15.06-21.06</a></li>
+				<li><a class="active" href="#">22.06-28.06</a></li>
+				<li><a href="#">29.06-5.07</a></li>
+				<li><a href="#">6-12.07</a></li>
+				<li><a href="#">13-19.07</a></li>
+				<li><a href="#">Итоги 1-ого этапа</a></li>
+				
+			</ul>
+		</div>
+		<div class="steps">
+			<ul>
+				<li>
+					<p>1-ый этап</p>
+					<span>(15 июня-12 июля)</span>
+				</li>
+				<li><a href="#">15.06-21.06</a></li>
+				<li><a class="active" href="#">22.06-28.06</a></li>
+				<li><a href="#">29.06-5.07</a></li>
+				<li><a href="#">6-12.07</a></li>
+				<li><a href="#">13-19.07</a></li>
+				<li><a href="#">Итоги 1-ого этапа</a></li>
+				
+			</ul>
+		</div>
+		<div class="steps">
+			<ul>
+				<li>
+					<p>1-ый этап</p>
+					<span>(15 июня-12 июля)</span>
+				</li>
+				<li><a href="#">15.06-21.06</a></li>
+				<li><a class="active" href="#">22.06-28.06</a></li>
+				<li><a href="#">29.06-5.07</a></li>
+				<li><a href="#">6-12.07</a></li>
+				<li><a href="#">13-19.07</a></li>
+				<li><a href="#">Итоги 1-ого этапа</a></li>
+				
+			</ul>
+		</div>
+		<a class="button-download" href="#">Победители конкурса</a>
+	</div>
+</section>
+<section id="video-wrap">
+	<div class="top"></div>
+	<section class="video">
+		<a class="play" href="#play"></a>
+		<video poster="/upload/concurs-video-poster.jpg" controls="controls">
+			<source src="/upload/video/concurs.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+			<source src="/upload/video/concurs.ogv" type='video/ogg; codecs="theora, vorbis"'>
+			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
+		</video>
+	</section>
+</section>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
