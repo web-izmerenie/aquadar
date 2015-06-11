@@ -11,6 +11,7 @@ $APPLICATION->SetTitle("Аквадар");
 	header("Location: ./productions/mineralnaya-voda/");
 	exit(); 
 }?>
+<a href="/fotokonkurs/" id="main-banner"><img src="/upload/main-baner.png"></a>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"main_page_top",
