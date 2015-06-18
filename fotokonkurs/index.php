@@ -63,32 +63,7 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 	</div>
 	<div id="bottom-wrap"></div>
 </div>
-<section id="table-winners">
-	<div id="winers-week">
-	</div>
-		<?$APPLICATION->IncludeComponent(
-			"bitrix:catalog.section.list",
-			"concurs_table",
-			Array(
-				"COMPONENT_TEMPLATE" => ".default",
-				"IBLOCK_TYPE" => "content",
-				"IBLOCK_ID" => "25",
-				"SECTION_ID" => "",
-				"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-				"COUNT_ELEMENTS" => "N",
-				"TOP_DEPTH" => "2",
-				"SECTION_FIELDS" => array("", ""),
-				"SECTION_USER_FIELDS" => array("", ""),
-				"VIEW_MODE" => "LINE",
-				"SHOW_PARENT_NAME" => "Y",
-				"SECTION_URL" => "",
-				"CACHE_TYPE" => "A",
-				"CACHE_TIME" => "36000000",
-				"CACHE_GROUPS" => "Y",
-				"ADD_SECTIONS_CHAIN" => "N"
-			)
-		);?>
-</section>
+
 
 <section id="video-wrap">
 	<div class="top"></div>
