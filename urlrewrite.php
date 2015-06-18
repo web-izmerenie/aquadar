@@ -33,6 +33,12 @@ $arUrlRewrite = array(
 		"PATH" => "/about/novosti/detail.php",
 		"SORT" => "100",
 	),
+	array(
+		"CONDITION" => "#^/fotokonkurs/(.+?)/(\\?.*\$|\$)#",
+		"RULE" => "&SECTION_CODE=\$1",
+		"ID" => "",
+		"PATH" => "/fotokonkurs/detail.php",
+	),
 );
 
 ?>

@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 		</ul>
 		<img class="arrow" id="first" src="upload/first_arrow.png">
 		<img class="arrow" id="second" src="upload/second_arrow.png">
-	</div>	
+	</div>
 </div>
 <div id="condition">
 	<div id="top-wrap"></div>
@@ -63,61 +63,8 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 	</div>
 	<div id="bottom-wrap"></div>
 </div>
-<!--<section id="table-winners">
-	<div id="winers-week">
-		<h1>Победители недели</h1>
-		<p>(22-28 июня)</p>
-		<ul>
-			<li>
-				<a class="fancybox" rel="gallery" href="upload/one-winner.png">
-					<img src="upload/one-winner.png">
-				</a>	
-				<span class="name">Маша Зайцева</span>
-				<span class="city">(Ростов-на-Дону)</span>
-				<span class="win-logo"></span>
-			</li>
-			<li>
-				<a class="fancybox" rel="gallery" href="upload/two-winner.png">
-					<img src="upload/two-winner.png">
-				</a>
-				<span class="name">Алина и Аниса Кабаевы</span>
-				<span class="city">(Нижний Камск)</span>
-				<span class="win-logo"></span>
-			</li>
-			<li>
-				<a class="fancybox" rel="gallery" href="upload/three-winner.png">
-					<img src="upload/three-winner.png">
-				</a>	
-				<span class="name">Елена Бережная и Николай Цискаридце</span>
-				<span class="city">(Комсомольск-на-Амуре)</span>
-				<span class="win-logo"></span>
-			</li>
-			
-		</ul>
-	</div>
-		<?$APPLICATION->IncludeComponent(
-			"bitrix:catalog.section.list",
-			"concurs_table",
-			Array(
-				"COMPONENT_TEMPLATE" => ".default",
-				"IBLOCK_TYPE" => "content",
-				"IBLOCK_ID" => "25",
-				"SECTION_ID" => "",
-				"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
-				"COUNT_ELEMENTS" => "N",
-				"TOP_DEPTH" => "2",
-				"SECTION_FIELDS" => array("", ""),
-				"SECTION_USER_FIELDS" => array("", ""),
-				"VIEW_MODE" => "LINE",
-				"SHOW_PARENT_NAME" => "Y",
-				"SECTION_URL" => "",
-				"CACHE_TYPE" => "A",
-				"CACHE_TIME" => "36000000",
-				"CACHE_GROUPS" => "Y",
-				"ADD_SECTIONS_CHAIN" => "N"
-			)
-		);?>
-</section>
+
+
 <section id="video-wrap">
 	<div class="top"></div>
 	<section class="video">
@@ -128,5 +75,5 @@ $APPLICATION->SetTitle("Фотоконкурс");?>
 			<p>Обновите ваш браузер чтобы просмотреть видео.</p>
 		</video>
 	</section>
-</section>-->
+</section>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
