@@ -16,10 +16,16 @@ $this->setFrameMode(true);?>
 <?if(!empty($arResult['ITEMS'])){?>
 	<ul>
 		<?foreach($arResult['ITEMS'] as $arItem){
-		$photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>1280, 'height'=>1024), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+		$photo = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>1280, 'height'=>1024), BX_RESIZE_IMAGE_PROPORTIONAL, true);
+		$smalPhoto = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>280, 'height'=>150), BX_RESIZE_IMAGE_EXACT, true);
+		$smalPhotoPrev = CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>280, 'height'=>150), BX_RESIZE_IMAGE_EXACT, true);?>
 			<li>
 				<a class="fancybox" rel="gallery" href="<?=$photo['src'];?>">
-					<img src="<?=$photo['src'];?>">
+					<?if(!empty($smalPhotoPrev)){?>
+						<img src="<?=$smalPhotoPrev['src'];?>">
+					<?}else{?>
+						<img src="<?=$smalPhoto['src'];?>">
+					<?}?>
 				</a>	
 				<span class="name"><?=$arItem['NAME'];?></span>
 				<span class="city">(<?=$arItem['PREVIEW_TEXT'];?>)</span>
