@@ -1,5 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Завод по производству минеральной воды и газированных напитков. Завод по производству и розливу воды.");
+$APPLICATION->SetPageProperty("title", "Производители безалкогольных напитков, лимонадов, газированной, минеральной и питьевой воды в России");
 $APPLICATION->SetTitle("page 2");?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail", 
 	"SEO_detail", 
