@@ -20,7 +20,7 @@
 		"REPLACE_FIELD_FROM" => "Y",
 		"UNIQUE_FORM_ID" => "54d4c86c1b192",
 		"OK_TEXT" => "Спасибо, ваша заявка принята!",
-		"EMAIL_TO" => "mail@akvadar.ru, kudinova@akvadar.ru, tyurin@akvadar.ru",
+		"EMAIL_TO" => "mail@akvadar.ru, kudinova@akvadar.ru, tyurin@akvadar.ru, opt_manager@akvadar.ru",
 		"DISPLAY_FIELDS" => "",
 		"REQUIRED_FIELDS" => "",
 		"CUSTOM_FIELDS" => array(0=>"Фамилия@input@text@required",1=>"Имя@input@text@required",2=>"Отчество@input@text@required",3=>"Ваш e-mail@input@email@required",4=>"Оставить сообщения@textarea",5=>"",6=>"",7=>"",8=>"",9=>"",10=>"",11=>"",12=>"",13=>"",14=>"",15=>"",),
