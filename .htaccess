@@ -14,6 +14,22 @@ ErrorDocument 404 /404.php
 <IfModule mod_rewrite.c>
   Options +FollowSymLinks
   RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^tula\.akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://akvadar-tula.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^spb\.akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://akvadar-spb.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^mahachkala\.akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://akvadar-mahachkala.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^stavropol\.akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://akvadar-stavropol.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^samara\.akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://akvadar-samara.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^akvadar\.ru$ [NC]
+RewriteRule ^(.*)$ http://www.akvadar.ru/$1 [R=301,L]
+
+RewriteRule ^robots\.txt$ robots.txt.php
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteCond %{REQUEST_FILENAME} !-d

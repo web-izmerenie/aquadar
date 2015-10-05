@@ -35,6 +35,6 @@ function urlSite(){
 <a href="/zavod-napitkov.php"></a>Завод<br/>
 <a href="/proizvoditeli-napitkov.php">Производитель</a><br/>
 <a href="/proizvodstvo-limonada.php">Производство</a><br/>
-<a href="http://www.akvadar.ru/proizvoditeli-rossii.php">в России</a><br/>
+<a href="/proizvoditeli-rossii.php">в России</a><br/>
 
 </div>
