@@ -86,11 +86,13 @@ $tplPath = "/bitrix/templates/main/";
 			<header class="header">
 
 				<section class="content-frame">
-					<a href="/" id="logo"></a>
+					<a href="/" id="logo" onclick="yaCounter29125650.reachGoal('LOGO'); return true;"></a>
 					<section id="right-column">
 						<div id="contact-head">
 							<b>+7 (863) 223-35-35</b>
-							<a id="call-me" href="#call_me">Перезвоните мне</a>
+							<a id="call-me" href="#call_me" onclick="yaCounter29125650.reachGoal('CALL_ME'); return true;">
+								Перезвоните мне
+							</a>
 						</div>
 						<?$APPLICATION->IncludeComponent(
 							"bitrix:menu",

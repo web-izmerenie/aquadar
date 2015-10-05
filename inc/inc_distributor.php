@@ -1,5 +1,20 @@
+<?
+global $APPLICATION;
+$dir = $APPLICATION->GetCurPage();
+$arrayDir = explode('/', $dir);
+?>
+
 <section class="distributor">
-	<a href="#distributor">Стать дистрибьютором</a>
+	<a href="#distributor"
+	<?if($arrayDir[1] === "productions"){?>
+		onclick="yaCounter29125650.reachGoal('PRODUCT_DISTRIBUT'); return true;"
+	<?}elseif($arrayDir[2] === "struktura.php"){?>
+		onclick="yaCounter29125650.reachGoal('STRUKTURA_DISTRIBUT'); return true;"
+	<?}elseif($arrayDir[2] === "geografiya-postavok.php"){?>
+		onclick="yaCounter29125650.reachGoal('GEOGRAPTHY_DISTRIBUT'); return true;"
+	<?}?>>
+		Стать дистрибьютором
+	</a>
 	<div id="text">
 		<p>Узнайте ваши условия
 	сотрудничества.</p>

@@ -5,7 +5,8 @@
 
 		<?foreach($arResult["ITEMS"] as $arItem):?>
 
-			<a href="<?=$arItem["PROPERTIES"]["ATT_LINK"]["~VALUE"];?>" class="main-items">
+			<a href="<?=$arItem["PROPERTIES"]["ATT_LINK"]["~VALUE"];?>" class="main-items"
+				onclick="yaCounter29125650.reachGoal('MAIN_ITEM_<?=$arItem['ID'];?>'); return true;">
 				<img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"];?>">
 				<div class="circle-description" id="<?=$arItem["PROPERTIES"]["ATT_COLOR_BACKGROUND"]["VALUE_XML_ID"];?>">
 					<div class="circle-content">

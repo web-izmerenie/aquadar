@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Аквадар");
 <?if($_SERVER["HTTP_HOST"] == "ust-bistra.ru" || $_SERVER["HTTP_HOST"] == "www.ust-bistra.ru"){
 	header("HTTP/1.1 301 Moved Permanently");
 	header("Location: ./productions/mineralnaya-voda/");
-	exit(); 
+	exit();
 }?>
 <a href="/fotokonkurs/" id="main-banner"><img src="/upload/main-baner.png"></a>
 <?$APPLICATION->IncludeComponent(
