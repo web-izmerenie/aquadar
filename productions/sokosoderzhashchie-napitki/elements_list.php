@@ -1,7 +1,7 @@
 <?define("JUICE", "Y");
 define("NO_INSIDE_MENU", "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Сокосодержащие напитки в ростове");
+$APPLICATION->SetPageProperty("title", "Сокосодержащие напитки, производство");
 $APPLICATION->SetTitle("Сокосодержащие напитки");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",

@@ -61,6 +61,7 @@ $tplPath = "/bitrix/templates/main/";
 <html class="<?=$html_classes?>">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="320px">
 		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<!--[if gte IE 9]><link href="<?=$tplPath?>styles/src/ie9.css" rel="stylesheet"><![endif]-->
 		<title><?$APPLICATION->ShowTitle()?></title>

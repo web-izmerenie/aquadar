@@ -19,7 +19,7 @@
 					"IBLOCK_ID" => "12",
 					"INSTALL_IBLOCK" => "N",
 					"DISABLE_SEND_MAIL" => "N",
-					"REPLACE_FIELD_FROM" => "Y",
+					"REPLACE_FIELD_FROM" => "N",
 					"UNIQUE_FORM_ID" => "54d498da3faec",
 					"OK_TEXT" => "Спасибо, ваша заявка принята.",
 					"EMAIL_TO" => "mail@akvadar.ru, kudinova@akvadar.ru, tyurin@akvadar.ru, opt_manager@akvadar.ru",
@@ -136,5 +136,8 @@
         <!-- /Yandex.Metrika counter -->
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/seo.php");?>
+<!--footer-->
+<div style="display:none;" class="footer-new">Аквадар - завод производитель безалкогольных напитков, минеральной воды и лиманадов с доставкой в Ростов-на-Дону, Спб, Махачкалу,  Ставрополь, Самару и другие города России.</div>
+<!--/footer-->
 </body>
 </html>

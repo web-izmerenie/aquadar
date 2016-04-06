@@ -1,5 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Производство сокосодержащих напитков и лимонадов в Ростове");
+$APPLICATION->SetPageProperty("title", "Производство сокосодержащих напитков и лимонадов");
 $APPLICATION->SetTitle("page 3");?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail", 
 	"SEO_detail", 

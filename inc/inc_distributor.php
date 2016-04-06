@@ -27,20 +27,32 @@ $arrayDir = explode('/', $dir);
 <?$APPLICATION->IncludeComponent(
 	"api:main.feedback",
 	"form_distributor",
-	Array(
+	array(
 		"IBLOCK_TYPE" => "result_form",
 		"IBLOCK_ID" => "13",
 		"INSTALL_IBLOCK" => "N",
 		"DISABLE_SEND_MAIL" => "N",
-		"REPLACE_FIELD_FROM" => "Y",
+		"REPLACE_FIELD_FROM" => "N",
 		"UNIQUE_FORM_ID" => "54d4c86c1b192",
 		"OK_TEXT" => "Спасибо, ваша заявка принята!",
 		"EMAIL_TO" => "mail@akvadar.ru, kudinova@akvadar.ru, tyurin@akvadar.ru, opt_manager@akvadar.ru",
-		"DISPLAY_FIELDS" => "",
-		"REQUIRED_FIELDS" => "",
-		"CUSTOM_FIELDS" => array(0=>"Фамилия@input@text@required",1=>"Имя@input@text@required",2=>"Отчество@input@text@required",3=>"Ваш e-mail@input@email@required",4=>"Оставить сообщения@textarea",5=>"",6=>"",7=>"",8=>"",9=>"",10=>"",11=>"",12=>"",13=>"",14=>"",15=>"",),
-		"ADMIN_EVENT_MESSAGE_ID" => array(0=>"8",),
-		"USER_EVENT_MESSAGE_ID" => "",
+		"DISPLAY_FIELDS" => array(
+		),
+		"REQUIRED_FIELDS" => array(
+		),
+		"CUSTOM_FIELDS" => array(
+			0 => "Фамилия@input@text@required",
+			1 => "Имя@input@text@required",
+			2 => "Отчество@input@text@required",
+			3 => "Ваш e-mail@input@email@required",
+			4 => "Оставить сообщения@textarea",
+			5 => "",
+		),
+		"ADMIN_EVENT_MESSAGE_ID" => array(
+			0 => "8",
+		),
+		"USER_EVENT_MESSAGE_ID" => array(
+		),
 		"HIDE_FIELD_NAME" => "Y",
 		"TITLE_DISPLAY" => "Y",
 		"FORM_TITLE" => "Стать дистрибьютором",
@@ -105,6 +117,8 @@ $arrayDir = explode('/', $dir);
 		"SHOW_CSS_MODAL_AFTER_SEND" => "N",
 		"CSS_MODAL_HEADER" => "",
 		"CSS_MODAL_FOOTER" => "",
-		"CSS_MODAL_CONTENT" => ""
-	)
+		"CSS_MODAL_CONTENT" => "",
+		"AJAX_OPTION_ADDITIONAL" => ""
+	),
+	false
 );?>
