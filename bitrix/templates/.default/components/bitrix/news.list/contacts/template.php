@@ -17,11 +17,13 @@
 							}?>
 						</p>
 						<p>
-							 Факс:<br>
-							 <?foreach ($arItem["PROPERTIES"]["ATT_FAKS"]["VALUE"] as $faks){
-								echo $faks;
-								echo "<br>";
-							}?>
+							<?if($arItem["PROPERTIES"]["ATT_FAKS"]["VALUE"]){?>
+								 Факс:<br>
+								 <?foreach ($arItem["PROPERTIES"]["ATT_FAKS"]["VALUE"] as $faks){
+									echo $faks;
+									echo "<br>";
+								}?>
+							<?}?>
 						</p>
 						<?foreach ($arItem["PROPERTIES"]["ATT_MAIL"]["VALUE"] as $mail){?>
 							<a href="mailto:<?=$mail;?>"><?=$mail?></a>
