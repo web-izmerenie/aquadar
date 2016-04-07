@@ -1,8 +1,14 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<nav id="main-menu">
+	<ul class="cities-list">
+		<?foreach($arResult["ITEMS"] as $arItem):?>
+			<li><a href="#map_<?=$arItem['ID']?>"><?=$arItem['NAME']?></a></li>
+		<?endforeach;?>
+	</ul>
+</nav>
 <ul>
-
 	<?foreach($arResult["ITEMS"] as $arItem):?>
-		<li>
+		<li id="map_<?=$arItem['ID']?>">
 			<h3><?=$arItem["NAME"];?></h3>
 			<div class="map">
 				<?=$arItem["PROPERTIES"]["ATT_MAP"]["~VALUE"]["TEXT"];?>
@@ -32,7 +38,5 @@
 				</div>
 			</div>
 		</li>
-
 	<?endforeach;?>
-
 </ul>

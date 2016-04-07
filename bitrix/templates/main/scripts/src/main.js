@@ -197,4 +197,14 @@ $(document).ready(function(){
 		min: 7
 	});
 
+	// Contact cities scroll
+	$('.cities-list a').click(function(){
+		var obj = $(this);
+		var position = parseInt($(obj.attr('href')).offset().top);
+		if(position) {
+			$('html, body').animate({ scrollTop: position-135}, 1000);
+		}
+		return false;
+	});
+
 });
