@@ -1,6 +1,7 @@
 <?define("CONTACTS", "Y");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Контакты");?><?$APPLICATION->IncludeComponent(
+$APPLICATION->SetTitle("Контакты");?>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"contacts",
 	Array(
@@ -50,4 +51,5 @@ $APPLICATION->SetTitle("Контакты");?><?$APPLICATION->IncludeComponent(
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

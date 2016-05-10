@@ -71,8 +71,8 @@ $tplPath = "/bitrix/templates/main/";
 			<?$APPLICATION->ShowHead()?>
 		<?}?>
 		<link href="<?=$tplPath?>styles/build/build.css" rel="stylesheet">
-        <script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="<?=$tplPath?>scripts/src/main.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="<?=$tplPath?>scripts/src/main.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/src/concurs.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.placeholder.min.js"></script>
 		<script type="text/javascript" src="<?=$tplPath?>scripts/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -90,7 +90,6 @@ $tplPath = "/bitrix/templates/main/";
 					<a href="/" id="logo" onclick="yaCounter29125650.reachGoal('LOGO'); return true;"></a>
 					<section id="right-column">
 						<div id="contact-head">
-							<b>+7 (863) 223-35-35</b>
 							<a id="call-me" href="#call_me" onclick="yaCounter29125650.reachGoal('CALL_ME'); return true;">
 								Перезвоните мне
 							</a>

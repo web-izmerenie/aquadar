@@ -6,6 +6,7 @@
 		<?endforeach;?>
 	</ul>
 </nav>
+<?$APPLICATION->IncludeFile("/include/contacts_block.php", Array(), Array("MODE" => "html"));?>
 <ul>
 	<?foreach($arResult["ITEMS"] as $arItem):?>
 		<li id="map_<?=$arItem['ID']?>">
