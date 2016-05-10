@@ -11,14 +11,18 @@
 			<?foreach($arResult['MORE_PHOTO'] as $photo){
 				$smallPhoto = CFile::ResizeImageGet($photo,
 													array('width'=>200, 'height'=>130),
-													BX_RESIZE_IMAGE_EXACT, true);
+													BX_RESIZE_IMAGE_PROPORTIONAL, true);
 				$bigPhoto = CFile::ResizeImageGet($photo,
 													array('width'=>1024, 'height'=>768),
 													BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
 
-				<li><a class="fancybox" rel="gallery1" href="<?=$bigPhoto['src'];?>"><img width="<?=$smallPhoto['width'];?>"
-													   height="<?=$smallPhoto['height'];?>"
-													   src="<?=$smallPhoto['src'];?>"></a></li>
+				<li>
+					<a class="fancybox" rel="gallery1" href="<?=$bigPhoto['src'];?>">
+						<img width="<?=$smallPhoto['width'];?>"
+							height="<?=$smallPhoto['height'];?>"
+							src="<?=$smallPhoto['src'];?>">
+					</a>
+				</li>
 			<?}?>
 		</ul>
 	</section>
