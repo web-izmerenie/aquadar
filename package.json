@@ -1,22 +1,19 @@
 {
   "dependencies": {
     "front-end-gulp-pattern": "^1",
-    "gulp-less": "^2",
     "gulp-browserify": "~0.5",
-    "gulp-uglify": "^1",
-    "gulp-jshint": "^1"
+    "gulp-jshint": "^1",
+    "gulp-less": "^3.1.0",
+    "gulp-uglify": "^1"
   },
-
   "scripts": {
     "postinstall": "bash ./deploy.sh"
   },
-
   "gulp": {
     "distclean": [
       "./front-end-gulp",
       "./node_modules"
     ],
-
     "styles": {
       "main": {
         "type": "less",
