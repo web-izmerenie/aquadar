@@ -34,13 +34,6 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"Фотоконкурс", 
-		"/fotokonkurs/", 
-		Array(), 
-		Array(), 
-		"" 
 	)
 );
 ?>
